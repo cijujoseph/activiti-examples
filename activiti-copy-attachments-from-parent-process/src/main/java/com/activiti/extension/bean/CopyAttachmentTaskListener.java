@@ -18,8 +18,8 @@ import com.activiti.service.runtime.RelatedContentService;
 public class CopyAttachmentTaskListener implements TaskListener {
 
 /**
-  * This task listener copies the "upload" field's attachments in parent
-  * process instance to a new attachment field "upload1" in the subprocess
+  * This task listener copies the "supportingfiles" field's attachments in parent
+  * process instance to a new attachment field "supportingfiles" in the subprocess
   * task.
   */
 private static final long serialVersionUID = 1L;
