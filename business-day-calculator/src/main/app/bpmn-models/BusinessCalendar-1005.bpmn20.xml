@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef" xmlns:modeler="http://activiti.com/modeler" modeler:version="1.0en" modeler:exportDateTime="20170117090333472" modeler:modelId="1005" modeler:modelVersion="2" modeler:modelLastUpdated="1484665410492">
+  <process id="BusinessCalendar" name="BusinessCalendar" isExecutable="true">
+    <startEvent id="startEvent1">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[startEvent1]]></modeler:editor-resource-id>
+      </extensionElements>
+    </startEvent>
+    <userTask id="sid-E52A90AA-DD66-460C-B365-608A8B160503" activiti:assignee="$INITIATOR" activiti:dueDate="${businessDaysCalculator.businessDueDateCalculator(&quot;P3D&quot;)}">
+      <extensionElements>
+        <modeler:allow-send-email><![CDATA[true]]></modeler:allow-send-email>
+        <modeler:activiti-idm-initiator><![CDATA[true]]></modeler:activiti-idm-initiator>
+        <modeler:editor-resource-id><![CDATA[sid-E52A90AA-DD66-460C-B365-608A8B160503]]></modeler:editor-resource-id>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-25A6C682-EADE-4939-A788-BD15F9BA8698" sourceRef="startEvent1" targetRef="sid-E52A90AA-DD66-460C-B365-608A8B160503">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-25A6C682-EADE-4939-A788-BD15F9BA8698]]></modeler:editor-resource-id>
+      </extensionElements>
+    </sequenceFlow>
+    <endEvent id="sid-6F1CFFF2-6598-4F12-B439-2761B594C388">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-6F1CFFF2-6598-4F12-B439-2761B594C388]]></modeler:editor-resource-id>
+      </extensionElements>
+    </endEvent>
+    <sequenceFlow id="sid-9A62EF1D-D3A4-45F3-8D81-C3878D0E6C12" sourceRef="sid-E52A90AA-DD66-460C-B365-608A8B160503" targetRef="sid-6F1CFFF2-6598-4F12-B439-2761B594C388">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-9A62EF1D-D3A4-45F3-8D81-C3878D0E6C12]]></modeler:editor-resource-id>
+      </extensionElements>
+    </sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_BusinessCalendar">
+    <bpmndi:BPMNPlane bpmnElement="BusinessCalendar" id="BPMNPlane_BusinessCalendar">
+      <bpmndi:BPMNShape bpmnElement="startEvent1" id="BPMNShape_startEvent1">
+        <omgdc:Bounds height="30.0" width="30.0" x="100.0" y="163.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-E52A90AA-DD66-460C-B365-608A8B160503" id="BPMNShape_sid-E52A90AA-DD66-460C-B365-608A8B160503">
+        <omgdc:Bounds height="80.0" width="100.0" x="175.0" y="138.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-6F1CFFF2-6598-4F12-B439-2761B594C388" id="BPMNShape_sid-6F1CFFF2-6598-4F12-B439-2761B594C388">
+        <omgdc:Bounds height="28.0" width="28.0" x="320.0" y="164.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-25A6C682-EADE-4939-A788-BD15F9BA8698" id="BPMNEdge_sid-25A6C682-EADE-4939-A788-BD15F9BA8698">
+        <omgdi:waypoint x="130.0" y="178.0"/>
+        <omgdi:waypoint x="175.0" y="178.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-9A62EF1D-D3A4-45F3-8D81-C3878D0E6C12" id="BPMNEdge_sid-9A62EF1D-D3A4-45F3-8D81-C3878D0E6C12">
+        <omgdi:waypoint x="275.0" y="178.0"/>
+        <omgdi:waypoint x="320.0" y="178.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

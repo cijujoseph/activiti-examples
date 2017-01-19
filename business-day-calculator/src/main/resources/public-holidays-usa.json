@@ -1,0 +1,2562 @@
+[{
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2012,
+		"dayOfWeek": 3
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 9,
+		"year": 2012,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 8,
+		"month": 10,
+		"year": 2012,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 11,
+		"year": 2012,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2012"
+}, {
+	"date": {
+		"day": 22,
+		"month": 11,
+		"year": 2012,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2012,
+		"dayOfWeek": 2
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2013,
+		"dayOfWeek": 2
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 21,
+		"month": 1,
+		"year": 2013,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 18,
+		"month": 2,
+		"year": 2013,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 27,
+		"month": 5,
+		"year": 2013,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2013,
+		"dayOfWeek": 4
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 2,
+		"month": 9,
+		"year": 2013,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 14,
+		"month": 10,
+		"year": 2013,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2013,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 28,
+		"month": 11,
+		"year": 2013,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2013,
+		"dayOfWeek": 3
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2014,
+		"dayOfWeek": 3
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 20,
+		"month": 1,
+		"year": 2014,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 17,
+		"month": 2,
+		"year": 2014,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 26,
+		"month": 5,
+		"year": 2014,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2014,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 9,
+		"year": 2014,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 13,
+		"month": 10,
+		"year": 2014,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2014,
+		"dayOfWeek": 2
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 27,
+		"month": 11,
+		"year": 2014,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2014,
+		"dayOfWeek": 4
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2015,
+		"dayOfWeek": 4
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 19,
+		"month": 1,
+		"year": 2015,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 16,
+		"month": 2,
+		"year": 2015,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 25,
+		"month": 5,
+		"year": 2015,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 7,
+		"year": 2015,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2015"
+}, {
+	"date": {
+		"day": 7,
+		"month": 9,
+		"year": 2015,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 10,
+		"year": 2015,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2015,
+		"dayOfWeek": 3
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 11,
+		"year": 2015,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2015,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2016,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 18,
+		"month": 1,
+		"year": 2016,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 15,
+		"month": 2,
+		"year": 2016,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 30,
+		"month": 5,
+		"year": 2016,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2016,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 9,
+		"year": 2016,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 10,
+		"year": 2016,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2016,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 11,
+		"year": 2016,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 12,
+		"year": 2016,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2016"
+}, {
+	"date": {
+		"day": 2,
+		"month": 1,
+		"year": 2017,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2017"
+}, {
+	"date": {
+		"day": 16,
+		"month": 1,
+		"year": 2017,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 20,
+		"month": 2,
+		"year": 2017,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 29,
+		"month": 5,
+		"year": 2017,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2017,
+		"dayOfWeek": 2
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 9,
+		"year": 2017,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 9,
+		"month": 10,
+		"year": 2017,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 11,
+		"year": 2017,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2017"
+}, {
+	"date": {
+		"day": 23,
+		"month": 11,
+		"year": 2017,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2017,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2018,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 15,
+		"month": 1,
+		"year": 2018,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 19,
+		"month": 2,
+		"year": 2018,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 28,
+		"month": 5,
+		"year": 2018,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2018,
+		"dayOfWeek": 3
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 9,
+		"year": 2018,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 8,
+		"month": 10,
+		"year": 2018,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 11,
+		"year": 2018,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2018"
+}, {
+	"date": {
+		"day": 22,
+		"month": 11,
+		"year": 2018,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2018,
+		"dayOfWeek": 2
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2019,
+		"dayOfWeek": 2
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 21,
+		"month": 1,
+		"year": 2019,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 18,
+		"month": 2,
+		"year": 2019,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 27,
+		"month": 5,
+		"year": 2019,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2019,
+		"dayOfWeek": 4
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 2,
+		"month": 9,
+		"year": 2019,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 14,
+		"month": 10,
+		"year": 2019,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2019,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 28,
+		"month": 11,
+		"year": 2019,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2019,
+		"dayOfWeek": 3
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2020,
+		"dayOfWeek": 3
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 20,
+		"month": 1,
+		"year": 2020,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 17,
+		"month": 2,
+		"year": 2020,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 25,
+		"month": 5,
+		"year": 2020,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 7,
+		"year": 2020,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2020"
+}, {
+	"date": {
+		"day": 7,
+		"month": 9,
+		"year": 2020,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 10,
+		"year": 2020,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2020,
+		"dayOfWeek": 3
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 11,
+		"year": 2020,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2020,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2021,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 18,
+		"month": 1,
+		"year": 2021,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 15,
+		"month": 2,
+		"year": 2021,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 31,
+		"month": 5,
+		"year": 2021,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 7,
+		"year": 2021,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2021"
+}, {
+	"date": {
+		"day": 6,
+		"month": 9,
+		"year": 2021,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 10,
+		"year": 2021,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2021,
+		"dayOfWeek": 4
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 11,
+		"year": 2021,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 12,
+		"year": 2021,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2021"
+}, {
+	"date": {
+		"day": 31,
+		"month": 12,
+		"year": 2021,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2022"
+}, {
+	"date": {
+		"day": 17,
+		"month": 1,
+		"year": 2022,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 21,
+		"month": 2,
+		"year": 2022,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 30,
+		"month": 5,
+		"year": 2022,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2022,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 9,
+		"year": 2022,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 10,
+		"year": 2022,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2022,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 11,
+		"year": 2022,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 12,
+		"year": 2022,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2022"
+}, {
+	"date": {
+		"day": 2,
+		"month": 1,
+		"year": 2023,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2023"
+}, {
+	"date": {
+		"day": 16,
+		"month": 1,
+		"year": 2023,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 20,
+		"month": 2,
+		"year": 2023,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 29,
+		"month": 5,
+		"year": 2023,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2023,
+		"dayOfWeek": 2
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 9,
+		"year": 2023,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 9,
+		"month": 10,
+		"year": 2023,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 11,
+		"year": 2023,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2023"
+}, {
+	"date": {
+		"day": 23,
+		"month": 11,
+		"year": 2023,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2023,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2024,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 15,
+		"month": 1,
+		"year": 2024,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 19,
+		"month": 2,
+		"year": 2024,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 27,
+		"month": 5,
+		"year": 2024,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2024,
+		"dayOfWeek": 4
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 2,
+		"month": 9,
+		"year": 2024,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 14,
+		"month": 10,
+		"year": 2024,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2024,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 28,
+		"month": 11,
+		"year": 2024,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2024,
+		"dayOfWeek": 3
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2025,
+		"dayOfWeek": 3
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 20,
+		"month": 1,
+		"year": 2025,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 17,
+		"month": 2,
+		"year": 2025,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 26,
+		"month": 5,
+		"year": 2025,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2025,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 9,
+		"year": 2025,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 13,
+		"month": 10,
+		"year": 2025,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2025,
+		"dayOfWeek": 2
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 27,
+		"month": 11,
+		"year": 2025,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2025,
+		"dayOfWeek": 4
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2026,
+		"dayOfWeek": 4
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 19,
+		"month": 1,
+		"year": 2026,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 16,
+		"month": 2,
+		"year": 2026,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 25,
+		"month": 5,
+		"year": 2026,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 7,
+		"year": 2026,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2026"
+}, {
+	"date": {
+		"day": 7,
+		"month": 9,
+		"year": 2026,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 10,
+		"year": 2026,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2026,
+		"dayOfWeek": 3
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 11,
+		"year": 2026,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2026,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2027,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 18,
+		"month": 1,
+		"year": 2027,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 15,
+		"month": 2,
+		"year": 2027,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 31,
+		"month": 5,
+		"year": 2027,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 7,
+		"year": 2027,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2027"
+}, {
+	"date": {
+		"day": 6,
+		"month": 9,
+		"year": 2027,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 10,
+		"year": 2027,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2027,
+		"dayOfWeek": 4
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 11,
+		"year": 2027,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 12,
+		"year": 2027,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2027"
+}, {
+	"date": {
+		"day": 31,
+		"month": 12,
+		"year": 2027,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2028"
+}, {
+	"date": {
+		"day": 17,
+		"month": 1,
+		"year": 2028,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 21,
+		"month": 2,
+		"year": 2028,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 29,
+		"month": 5,
+		"year": 2028,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2028,
+		"dayOfWeek": 2
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 9,
+		"year": 2028,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 9,
+		"month": 10,
+		"year": 2028,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 11,
+		"year": 2028,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2028"
+}, {
+	"date": {
+		"day": 23,
+		"month": 11,
+		"year": 2028,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2028,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2029,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 15,
+		"month": 1,
+		"year": 2029,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 19,
+		"month": 2,
+		"year": 2029,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 28,
+		"month": 5,
+		"year": 2029,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2029,
+		"dayOfWeek": 3
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 9,
+		"year": 2029,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 8,
+		"month": 10,
+		"year": 2029,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 11,
+		"year": 2029,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2029"
+}, {
+	"date": {
+		"day": 22,
+		"month": 11,
+		"year": 2029,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2029,
+		"dayOfWeek": 2
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2030,
+		"dayOfWeek": 2
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 21,
+		"month": 1,
+		"year": 2030,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 18,
+		"month": 2,
+		"year": 2030,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 27,
+		"month": 5,
+		"year": 2030,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2030,
+		"dayOfWeek": 4
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 2,
+		"month": 9,
+		"year": 2030,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 14,
+		"month": 10,
+		"year": 2030,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2030,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 28,
+		"month": 11,
+		"year": 2030,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2030,
+		"dayOfWeek": 3
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2031,
+		"dayOfWeek": 3
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 20,
+		"month": 1,
+		"year": 2031,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 17,
+		"month": 2,
+		"year": 2031,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 26,
+		"month": 5,
+		"year": 2031,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2031,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 9,
+		"year": 2031,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 13,
+		"month": 10,
+		"year": 2031,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2031,
+		"dayOfWeek": 2
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 27,
+		"month": 11,
+		"year": 2031,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2031,
+		"dayOfWeek": 4
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2032,
+		"dayOfWeek": 4
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 19,
+		"month": 1,
+		"year": 2032,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 16,
+		"month": 2,
+		"year": 2032,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 31,
+		"month": 5,
+		"year": 2032,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 7,
+		"year": 2032,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2032"
+}, {
+	"date": {
+		"day": 6,
+		"month": 9,
+		"year": 2032,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 10,
+		"year": 2032,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2032,
+		"dayOfWeek": 4
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 11,
+		"year": 2032,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 12,
+		"year": 2032,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2032"
+}, {
+	"date": {
+		"day": 31,
+		"month": 12,
+		"year": 2032,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2033"
+}, {
+	"date": {
+		"day": 17,
+		"month": 1,
+		"year": 2033,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 21,
+		"month": 2,
+		"year": 2033,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 30,
+		"month": 5,
+		"year": 2033,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2033,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 9,
+		"year": 2033,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 10,
+		"year": 2033,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2033,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 11,
+		"year": 2033,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 12,
+		"year": 2033,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2033"
+}, {
+	"date": {
+		"day": 2,
+		"month": 1,
+		"year": 2034,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2034"
+}, {
+	"date": {
+		"day": 16,
+		"month": 1,
+		"year": 2034,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 20,
+		"month": 2,
+		"year": 2034,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 29,
+		"month": 5,
+		"year": 2034,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2034,
+		"dayOfWeek": 2
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 9,
+		"year": 2034,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 9,
+		"month": 10,
+		"year": 2034,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 11,
+		"year": 2034,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2034"
+}, {
+	"date": {
+		"day": 23,
+		"month": 11,
+		"year": 2034,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2034,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2035,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 15,
+		"month": 1,
+		"year": 2035,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 19,
+		"month": 2,
+		"year": 2035,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 28,
+		"month": 5,
+		"year": 2035,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2035,
+		"dayOfWeek": 3
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 9,
+		"year": 2035,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 8,
+		"month": 10,
+		"year": 2035,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 11,
+		"year": 2035,
+		"dayOfWeek": 1
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day",
+	"note": "Holiday in lieu of 11 Nov 2035"
+}, {
+	"date": {
+		"day": 22,
+		"month": 11,
+		"year": 2035,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2035,
+		"dayOfWeek": 2
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2036,
+		"dayOfWeek": 2
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 21,
+		"month": 1,
+		"year": 2036,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 18,
+		"month": 2,
+		"year": 2036,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 26,
+		"month": 5,
+		"year": 2036,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2036,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 9,
+		"year": 2036,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 13,
+		"month": 10,
+		"year": 2036,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2036,
+		"dayOfWeek": 2
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 27,
+		"month": 11,
+		"year": 2036,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2036,
+		"dayOfWeek": 4
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2037,
+		"dayOfWeek": 4
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 19,
+		"month": 1,
+		"year": 2037,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 16,
+		"month": 2,
+		"year": 2037,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 25,
+		"month": 5,
+		"year": 2037,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 3,
+		"month": 7,
+		"year": 2037,
+		"dayOfWeek": 5
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2037"
+}, {
+	"date": {
+		"day": 7,
+		"month": 9,
+		"year": 2037,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 12,
+		"month": 10,
+		"year": 2037,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2037,
+		"dayOfWeek": 3
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 11,
+		"year": 2037,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 12,
+		"year": 2037,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day"
+}, {
+	"date": {
+		"day": 1,
+		"month": 1,
+		"year": 2038,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day"
+}, {
+	"date": {
+		"day": 18,
+		"month": 1,
+		"year": 2038,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 15,
+		"month": 2,
+		"year": 2038,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 31,
+		"month": 5,
+		"year": 2038,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 7,
+		"year": 2038,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day",
+	"note": "Holiday in lieu of 4 Jul 2038"
+}, {
+	"date": {
+		"day": 6,
+		"month": 9,
+		"year": 2038,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 10,
+		"year": 2038,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2038,
+		"dayOfWeek": 4
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 25,
+		"month": 11,
+		"year": 2038,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 12,
+		"year": 2038,
+		"dayOfWeek": 5
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2038"
+}, {
+	"date": {
+		"day": 31,
+		"month": 12,
+		"year": 2038,
+		"dayOfWeek": 5
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2039"
+}, {
+	"date": {
+		"day": 17,
+		"month": 1,
+		"year": 2039,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 21,
+		"month": 2,
+		"year": 2039,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 30,
+		"month": 5,
+		"year": 2039,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2039,
+		"dayOfWeek": 1
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}, {
+	"date": {
+		"day": 5,
+		"month": 9,
+		"year": 2039,
+		"dayOfWeek": 1
+	},
+	"localName": "Labor Day",
+	"englishName": "Labor Day"
+}, {
+	"date": {
+		"day": 10,
+		"month": 10,
+		"year": 2039,
+		"dayOfWeek": 1
+	},
+	"localName": "Columbus Day",
+	"englishName": "Columbus Day"
+}, {
+	"date": {
+		"day": 11,
+		"month": 11,
+		"year": 2039,
+		"dayOfWeek": 5
+	},
+	"localName": "Veterans' Day",
+	"englishName": "Veterans' Day"
+}, {
+	"date": {
+		"day": 24,
+		"month": 11,
+		"year": 2039,
+		"dayOfWeek": 4
+	},
+	"localName": "Thanksgiving Day",
+	"englishName": "Thanksgiving Day"
+}, {
+	"date": {
+		"day": 26,
+		"month": 12,
+		"year": 2039,
+		"dayOfWeek": 1
+	},
+	"localName": "Christmas Day",
+	"englishName": "Christmas Day",
+	"note": "Holiday in lieu of 25 Dec 2039"
+}, {
+	"date": {
+		"day": 2,
+		"month": 1,
+		"year": 2040,
+		"dayOfWeek": 1
+	},
+	"localName": "New Year's Day",
+	"englishName": "New Year's Day",
+	"note": "Holiday in lieu of 1 Jan 2040"
+}, {
+	"date": {
+		"day": 16,
+		"month": 1,
+		"year": 2040,
+		"dayOfWeek": 1
+	},
+	"localName": "Birthday of Martin Luther King, Jr.",
+	"englishName": "Birthday of Martin Luther King, Jr."
+}, {
+	"date": {
+		"day": 20,
+		"month": 2,
+		"year": 2040,
+		"dayOfWeek": 1
+	},
+	"localName": "Washington's Birthday",
+	"englishName": "Washington's Birthday"
+}, {
+	"date": {
+		"day": 28,
+		"month": 5,
+		"year": 2040,
+		"dayOfWeek": 1
+	},
+	"localName": "Memorial Day",
+	"englishName": "Memorial Day"
+}, {
+	"date": {
+		"day": 4,
+		"month": 7,
+		"year": 2040,
+		"dayOfWeek": 3
+	},
+	"localName": "Independence Day",
+	"englishName": "Independence Day"
+}]
