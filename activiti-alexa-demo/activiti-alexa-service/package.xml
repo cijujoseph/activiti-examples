@@ -1,0 +1,14 @@
+<assembly>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+    <fileSet>
+        <includes>
+            <include>activiti-alexa-service.js</include>
+            <include>node_modules/**</include>
+        </includes>
+    </fileSet>
+    </fileSets>
+</assembly>
