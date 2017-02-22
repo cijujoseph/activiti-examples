@@ -96,8 +96,11 @@ public class TwilioServlet extends HttpServlet {
 		properties.load(inputStream);
 
 		// Create a list of people we know.
+		
 		HashMap<String, String> callers = new HashMap<String, String>();
-		callers.put(properties.getProperty("twilio.caller.1.number"), properties.getProperty("twilio.caller.1.name"));
+		if(properties.getProperty("twilio.caller.1.number")!=null){
+			callers.put(properties.getProperty("twilio.caller.1.number"), properties.getProperty("twilio.caller.1.name"));
+		}
 
 		// Check & Set Decooda properties
 		if (properties.getProperty("decooda.enabled") != null
@@ -111,15 +114,18 @@ public class TwilioServlet extends HttpServlet {
 
 		// Get the caller.
 		String fromNumber = request.getParameter("From");
-		String knownCaller = callers.get(fromNumber);
+		String knownCaller = callers.get(fromNumber)!=null? callers.get(fromNumber) :"";
 		String executionId = null;
 		String action = null;
 		VoiceResponse.Builder builder = new VoiceResponse.Builder();
 		String addressUser;
 
-		if (knownCaller == null) {
+		if (properties.getProperty("twilio.callercheck.enabled") != null
+				&& properties.getProperty("twilio.callercheck.enabled").equals("true") && knownCaller.equals("")) {
+			
 			builder.say(new Say.Builder(UNKNOWN_CALLER_MSG_LINE1).build()).pause(new Pause.Builder().length(1).build())
 					.say(new Say.Builder(GOOD_BYE_MSG).build()).build();
+			
 		} else {
 			String pathInfo = request.getPathInfo();
 			log.info(request.getRequestURI());
@@ -150,7 +156,7 @@ public class TwilioServlet extends HttpServlet {
 			case ACTION_HELLO:
 				// Use the caller's name
 				addressUser = "Hello " + knownCaller;
-				executions = checkActiveTwilioCallWait(knownCaller);
+				executions = checkActiveTwilioCallWait(fromNumber);
 				if ((Integer) executions.get("size") > 0) {
 					executionId = ((Map<String, String>) ((List) (executions.get("data"))).get(0)).get("id");
 					// Create a TwiML response and add our friendly message.
@@ -249,20 +255,21 @@ public class TwilioServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
+	
+	
 
 	// This method will check if there is an active Twilio call wait message
 	// subscription in Activiti for the give caller
-	// The lookup is performed based on the Contact Name associated with the
-	// called number
-	public Map<String, Object> checkActiveTwilioCallWait(String caller)
+	// The lookup is performed based on the called number
+	public Map<String, Object> checkActiveTwilioCallWait(String callerNumber)
 			throws JsonParseException, JsonMappingException, IOException {
 		Map<String, Object> payload = new HashMap<>();
 		payload.put("processDefinitionKey", PROCESS_KEY);
 		payload.put("messageEventSubscriptionName", MESSAGE_NAME);
 		List<Map<String, Object>> varList = new ArrayList<Map<String, Object>>();
 		Map<String, Object> variable1 = new HashMap<>();
-		variable1.put("name", "customerName");
-		variable1.put("value", caller.toUpperCase());
+		variable1.put("name", "contactNumber");
+		variable1.put("value", callerNumber);
 		variable1.put("operation", "equals");
 		variable1.put("type", "string");
 		varList.add(variable1);
