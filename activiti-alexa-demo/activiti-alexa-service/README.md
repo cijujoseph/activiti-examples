@@ -5,6 +5,13 @@ Important - Your Echo device and Alexa skills must be configured using the same 
 
 ## Demo specific configuration - Alexa Skills
 
+* Go to Amazon Developer Console (https://developer.amazon.com/edw/home.html#/) -> Login -> Alexa -> Alexa Skills Kit (Get Started) -> Add a New Skill
+
+* Configure Skill Information
+	* Select "Custom Interaction Model"
+	* Name -> Booking Service
+	* Invocation Name -> alfresco services
+
 * Intent Schema Configuration - Use the following intent schema. In the below intent, you could also use AMAZON.Person instead of CUSTOM_NAME_LIST
 ```
 {
