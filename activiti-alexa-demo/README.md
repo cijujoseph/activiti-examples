@@ -1,6 +1,6 @@
 ##Work in progress component - NOT YET WORKING E2E!
 
-#### The project containing all the components of my blog post - Voice Enabled Business Process using Alfresco Activiti and AWS Alexa
+#### The project contains all the components of my blog post - Voice Enabled Business Process using Alfresco Activiti and AWS Alexa
 
 ### Prerequisites to run this demo end-2-end
 
