@@ -4,23 +4,25 @@ var http = require('http');
  * This sample illustrates how to use Alexa to integrate with Activiti using your voice.
  * 
  * author: Ciju Joseph
+ * Also, Thanks to Greg's code at https://github.com/melahn/alexa-alfresco which I used as reference/template when building this! 
  **/
 var host = ""; //Activiti host
 var port = "8080"; //Activiti port
 var tenant = "tenant_1";
 var userId = ""; //Activiti userId
 var password = ""; //Activiti password
-
+var alfrescoActivitiVersion = "1.5.3.2+" //If you are using version 1.5.3.2 or above leave it this way. Else change it to something else. Used in scheduleServiceResponse() below
 var baseActivitiUrl = "http://" + userId + ":" + password + "@" + host + ":" + port + "/activiti-app/api/"
 var versionUrl = "http://" + userId + ":" + password + "@" + host + ":" + port + "/activiti-app/api/enterprise/app-version";
 var startProcessUrl = baseActivitiUrl + "enterprise/process-instances";
 var executionQueryUrl = baseActivitiUrl + "query/executions?tenantId="+tenant;
 var executionBaseUrl = baseActivitiUrl + "runtime/executions";
 var variablesBaseUrl = baseActivitiUrl + "enterprise/process-instances";
-var appId = ""; /* use an Alexa appid here */ // TODO get this value from configuration
-var serviceBookingProcessKey = "VehicleServiceBooking"
-var serviceBookingProcessDeploymentId = "VehicleServiceBooking:49:18271"
+var appId = "flzfklasjfk"; /* use an Alexa appid here */ // TODO get this value from alexa skill configuration
+var serviceBookingProcessDefinitionKey = "VehicleServiceBooking"
+var serviceBookingProcessDefinitionId = "VehicleServiceBooking:49:18271" //This is not required to be set if your Activiti version is 1.5.3.2+ 
 var defaultUser = "Ciju Joseph"
+var defaultContactNumber = "+1XXXXXXXXXX"
 
 /**
  *  Route the incoming request based on the event type
@@ -210,7 +212,7 @@ function getHelpResponse(intent, session, callback) {
         +"To check if the system is available, please say, Is Alfresco up? <break time=\"1s\"/>" 
         +"To schedule a service, please say, Schedule a service <break time=\"1s\"/>" 
         +"To check the date of my appointment, please say, Checking my appointment date <break time=\"1s\"/>" 
-        +"To reschedule an appointment, please say, Change my appointment date <break time=\"1s\"/>" 
+        +"To reschedule an appointment by 2 days, please say, Change my appointment by 2 days <break time=\"1s\"/>" 
          +"To cancel an appointment, please say, Cancel my appointment <break time=\"1s\"/>";
     callback(sessionAttributes,
          buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
@@ -246,7 +248,7 @@ function isAlfrescoAvailable(intentName, attributes, callback, speechOutput, rep
 }
 
 /**
- *   Schedule a service function
+ *   Schedules a service which is basically creating a process instance in Activiti.
  */
 function scheduleServiceResponse(intentName, session, callback) {
     console.log("scheduleServiceResponse");
@@ -256,7 +258,12 @@ function scheduleServiceResponse(intentName, session, callback) {
     var shouldEndSession = false;
     var request = require("request");
     var request1 = require("request");
-    var reqObj = {"values":{"customerName":name, "contactNumber": "+1(121)2121212"},"processDefinitionId":serviceBookingProcessDeploymentId, "name": "Vehicle Service Booking - Alexa"}
+    //This if/else is due to a defect that was fixed in 1.5.3.2 https://issues.alfresco.com/jira/browse/ACTIVITI-619
+    if(alfrescoActivitiVersion === "1.5.3.2+"){
+        var reqObj = {"values":{"customerName":name, "contactNumber": defaultContactNumber},"processDefinitionKey":serviceBookingProcessDefinitionKey, "name": "Vehicle Service Booking - Alexa"}
+    } else{
+        var reqObj = {"values":{"customerName":name, "contactNumber": defaultContactNumber},"processDefinitionId":serviceBookingProcessDefinitionId, "name": "Vehicle Service Booking - Alexa"}
+    }
     body = JSON.stringify(reqObj)
     request({
         url: startProcessUrl,
@@ -278,14 +285,15 @@ function scheduleServiceResponse(intentName, session, callback) {
              var respObj = eval("(" + body + ')');
              var appointmentDate = getVariableValue(respObj.variables, 'appointmentDate') 
              speechOutput = "Appointment booking successful. Your appoitnment is on " + simplifyDate(appointmentDate);
- 	         callback(session.attributes,
+             callback(session.attributes,
                       buildSpeechletResponse(intentName, speechOutput, repromptText, shouldEndSession));
          }
     });
 }
 
 /**
- *   Check an existing appointment date
+ *   Check an existing appointment date. 
+ * If an active appointment can be found, the appointment will be returned back
  */
  function getApmntDateResponse(intentName, session, callback) {
     console.log("scheduleServiceResponse");
@@ -295,7 +303,7 @@ function scheduleServiceResponse(intentName, session, callback) {
     var shouldEndSession = false;
     var request = require("request");
     var request1 = require("request");
-    var reqObj = {"processDefinitionKey":serviceBookingProcessKey, "processInstanceVariables": [{"name":"customerName", "value":name, "operation": "equals", "type":"string"}]}
+    var reqObj = {"processDefinitionKey":serviceBookingProcessDefinitionKey, "processInstanceVariables": [{"name":"customerName", "value":name, "operation": "equals", "type":"string"},{"name":"contactNumber", "value":defaultContactNumber, "operation": "equals", "type":"string"}]}
     body = JSON.stringify(reqObj)
     request({
         url: executionQueryUrl,
@@ -348,9 +356,10 @@ function scheduleServiceResponse(intentName, session, callback) {
     });
 }
  
-// /**
-//  *   Change an existing appointment date
-//  */ 
+/**
+*   Change an existing appointment date. If the "days" value can be extracted from the utterance,
+* the appointment will be resheduled by that many "days" else the default process behaviour which is push by 1 minute
+*/ 
 
 function rescheduleApmtResponse(intent, session, callback) {
     var name = getUserName(session.attributes).toUpperCase();
@@ -359,11 +368,11 @@ function rescheduleApmtResponse(intent, session, callback) {
     var shouldEndSession = false;
     var request = require("request");
     var request1 = require("request");
-    var days = 2
+    var days = 0
     if(intent.slots.days && intent.slots.days.value){
         days = parseInt(intent.slots.days.value)
     } 
-    var reqObj = {"processDefinitionKey":serviceBookingProcessKey, "messageEventSubscriptionName":"reschedule", "processInstanceVariables": [{"name":"customerName", "value":name, "operation": "equals", "type":"string"}]}
+    var reqObj = {"processDefinitionKey":serviceBookingProcessDefinitionKey, "messageEventSubscriptionName":"reschedule", "processInstanceVariables": [{"name":"customerName", "value":name, "operation": "equals", "type":"string"},{"name":"contactNumber", "value":defaultContactNumber, "operation": "equals", "type":"string"}]}
     body = JSON.stringify(reqObj)
     var execObj = {"action":"messageEventReceived", "messageName":"reschedule", "variables": [{"name":"changeAppointmentBy", "value":days}]}
     executebody = JSON.stringify(execObj)
@@ -416,9 +425,9 @@ function rescheduleApmtResponse(intent, session, callback) {
    
 }
 
-// /**
-//  *   Cancel an existing appointment
-//  */ 
+/**
+ *   Cancel an existing appointment associated with the caller
+ */ 
 
 function cancelApmtResponse(intentName, session, callback) {
     var name = getUserName(session.attributes).toUpperCase();
@@ -427,7 +436,7 @@ function cancelApmtResponse(intentName, session, callback) {
     var shouldEndSession = false;
     var request = require("request");
     var request1 = require("request");
-    var reqObj = {"processDefinitionKey":serviceBookingProcessKey, "messageEventSubscriptionName":"cancelAppointment", "processInstanceVariables": [{"name":"customerName", "value":name, "operation": "equals", "type":"string"}]}
+    var reqObj = {"processDefinitionKey":serviceBookingProcessDefinitionKey, "messageEventSubscriptionName":"cancelAppointment", "processInstanceVariables": [{"name":"customerName", "value":name, "operation": "equals", "type":"string"},{"name":"contactNumber", "value":defaultContactNumber, "operation": "equals", "type":"string"}]}
     body = JSON.stringify(reqObj)
     var execObj = {"action":"messageEventReceived", "messageName":"cancelAppointment"}
     executebody = JSON.stringify(execObj)
