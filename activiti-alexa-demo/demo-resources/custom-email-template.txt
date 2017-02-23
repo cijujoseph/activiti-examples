@@ -1,12 +1,12 @@
 Configure a custom email template by going to ActivitiApp -> Identity Management -> Tenants -> Email Templates -> Custom email templates -> Create new email template.
 	Name - custom-email-template.ftl
 	Subject - Thank you for servicing with Alfresco Services!
-	Email content - copy the whole text given below
+	Email content - copy the whole text given below. Replace <twilio number> with the twilio number
 
 Hello ${customerName},
 
 Thank you for servicing with Alfresco Services! Please find attached the detailed service report for your reference.
-If you have a moment, please call (630) 250 5375 to answer a short survey.
+If you have a moment, please call <twilio number> to answer a short survey.
 
 Thanks,
 Alfresco Services
