@@ -48,18 +48,19 @@ public class TwilioSMSSend implements JavaDelegate{
 	
 	public void execute(DelegateExecution execution) throws Exception {
 		String jsonString = null;
-		String twillioAccountSID = env.getProperty("twillio.account.sid", "XXXX");
-		String twillioAuthToken = env.getProperty("twillio.auth.token", "YYYY");
+		String twillioAccountSID = env.getProperty("twillio.account.sid");
+		String twillioAuthToken = env.getProperty("twillio.auth.token");
 		String authString = twillioAccountSID+ ":"+twillioAuthToken;
 		String authorizationString = "Basic "+new String((new Base64()).encode(authString.getBytes()));
-		String restEndpointURI = env.getProperty("twillio.sms.url", "https://api.twilio.com/2010-04-01/Accounts/XXXX/Messages.json");
+		String restEndpointURI = env.getProperty("twillio.sms.url");
 		CloseableHttpResponse response = null;
 		HttpRequestBase httpRequest = new HttpPost(restEndpointURI);
 		try {
 			
 			URIBuilder builder = new URIBuilder(restEndpointURI);
-			builder.addParameter("To", env.getProperty("twillio.sms.to", "TO_NUM"));
-			String twilioNumber = env.getProperty("twillio.number", "FROM_NUM");
+			String sendTo = execution.getVariable("contactNumber")!=null ? execution.getVariable("contactNumber").toString() : env.getProperty("twillio.sms.to");
+			builder.addParameter("To", sendTo);
+			String twilioNumber = env.getProperty("twillio.number");
 			builder.addParameter("From", twilioNumber);
 			builder.addParameter("Body","Your car is ready to be picked up. Thank you for servicing with Alfresco Services! If you have a moment, please call "+ twilioNumber +" to answer a short survey.");
 			

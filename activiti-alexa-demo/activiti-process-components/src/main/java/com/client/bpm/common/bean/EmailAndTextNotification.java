@@ -40,7 +40,8 @@ public class EmailAndTextNotification implements JavaDelegate {
 				templateVariables.putAll(execution.getVariables());
 				String template = env.getProperty("customer.email.template", "custom-email-template.ftl");
 				String subject = env.getProperty("customer.email.subject", "Thank you for servicing with Alfresco Services!"); 
-				String[] toList = { env.getProperty("customer.email.address", "demo@example.com") };
+				String emailAddress = execution.getVariable("contactEmail")!=null ? execution.getVariable("contactEmail").toString() : env.getProperty("customer.email.address");
+				String[] toList = { emailAddress };
 				try {
 					// send email
 					emailUtils.sendEmail(toList, subject, emailUtils.evaluateTemplate(template, templateVariables),
