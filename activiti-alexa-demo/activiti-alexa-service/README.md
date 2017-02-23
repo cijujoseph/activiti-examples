@@ -1,6 +1,8 @@
 
 This project contains the Lambda function required for Alexa to interact with Activiti. You will need to change the activiti-alexa-service.js to match your environment. I will not go into the basics of Alexa Skills & Lambda use in this readme. https://github.com/alexa/skill-sample-nodejs-howto is a great resource that can help you build and configure Alexa Skills.
 
+Important - Your Echo device and Alexa skills must be configured using the same account
+
 ## Demo specific configuration - Alexa Skills
 
 * Intent Schema Configuration - Use the following intent schema. In the below intent, you could also use AMAZON.Person instead of CUSTOM_NAME_LIST

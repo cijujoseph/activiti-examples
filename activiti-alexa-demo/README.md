@@ -30,6 +30,7 @@
 
 ### Alexa Configuration
 1. Follow the README available in ctiviti-alexa-service folder of this project.
+2. Your Echo device and Alexa skills must be configured using the same account.
 
 #### Important Notes:
 * Activiti and Twilio webapps must be accessible from the public (for Twilio to call our twilio api, alexa to talk to activiti etc). I normally use ngrok (https://ngrok.com/) to make these apps available on internet. The following two commands will do the job for you! Another option is to do everything on an EC2 instance. 
