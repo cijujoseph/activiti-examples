@@ -23,7 +23,7 @@ var serviceBookingProcessDefinitionKey = "VehicleServiceBooking"
 var serviceBookingProcessDefinitionId = "VehicleServiceBooking:49:18271" //This is not required to be set if your Activiti version is 1.5.3.2+ 
 var defaultUser = "Ciju Joseph"
 var defaultContactNumber = "+1XXXXXXXXXX"//Please make sure that you are using a valid phone number and this number will be used to send text messages via your twilio account
-var contactEmail = "demo@example.com" //Used for customer notification
+var contactEmail = "demo@example.com" //Used for customer notification, so set a valid user
 
 /**
  *  Route the incoming request based on the event type
@@ -285,8 +285,12 @@ function scheduleServiceResponse(intentName, session, callback) {
              console.log(response.statusCode, body);
              console.log("body = " + body);
              var respObj = eval("(" + body + ')');
-             var appointmentDate = getVariableValue(respObj.variables, 'appointmentDate') 
-             speechOutput = "Appointment booking successful. Your appoitnment is on " + simplifyDate(appointmentDate);
+             if(respObj.exception && respObj.exception.startsWith("Query return")){
+                 speechOutput = "Looks like you are running an Activiti version older than 1.5.3.2. Please change the version variable in the Lambda function and try again!";
+             } else{
+                var appointmentDate = getVariableValue(respObj.variables, 'appointmentDate') 
+                speechOutput = "Appointment booking successful. Your appoitnment is on " + simplifyDate(appointmentDate);
+             }
              callback(session.attributes,
                       buildSpeechletResponse(intentName, speechOutput, repromptText, shouldEndSession));
          }
