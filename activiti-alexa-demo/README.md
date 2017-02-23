@@ -40,3 +40,8 @@ ngrok http 8080
 ```
 * Activiti must have an email server configured via activiti-app.properties
 
+## Run the demo!
+
+Once you have all the components configured, start your interaction with your Echo using the key word "ask alfresco services" (provided you used the term "alfresco service" as Invocation Name when configuring the Alexa Custom skill)
+For more commands please refer to the "Utterences" section of your skill
+
