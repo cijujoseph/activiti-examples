@@ -9,14 +9,16 @@
 5. Configure the above URL by following instructions at https://support.twilio.com/hc/en-us/articles/223136207-Getting-started-with-your-new-Twilio-phone-number. Please note that the URL should be a publicly(internet) accessible url and NOT localhost when configuring in Twilio! 
 
 
-## Configuration Details Explained
+## Properties Explained
 ```
-twilio.callercheck.enabled - Value can be true or false. If set to true, caller will get a not recognized message if the number is not configured in the property file!
+twilio.callercheck.enabled - true|false. If set to true, caller will get a "not recognized" message if the number is not configured!
 twilio.caller.id.n - configure the name and number delimited by a semicolon. Replace "n" with a number. eg: twilio.caller.id.1=Ciju J;+1XXX
 
-decooda.enabled - value can be true or false. This is the cognitive analytics platform which I use to analyse the recorded voice of a customer. Contact https://decooda.com/contact-us/ if you want to enable this in your process. Otherwise set it to false which will mock the decooda response
+decooda.enabled - true|false. This is the cognitive analytics platform which I used to analyze the recorded voice of a customer. 
+Contact https://decooda.com/contact-us/ if you want to enable this in your process. Otherwise set it to false which will mock a "Decooda" response.
+
 deccoda.api.url - decooda API
 decooda.model - decooda model number to use to analyse the customer response.
 
-activiti.api.base.url - Alfresco Activiti base url http://\<user\>:\<pw\>@\<host\>:\<port\>/activiti-app/api/
+activiti.api.base.url - Alfresco Activiti base url http://<user>:<pw>@<host>:<port>/activiti-app/api/
 ```
