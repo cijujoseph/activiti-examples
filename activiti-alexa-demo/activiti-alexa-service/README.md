@@ -1,5 +1,5 @@
 
-This project contains the Lambda function required for Alexa to interact with Activiti. You will need to change the activiti-alexa-service.js to match your environment. I will not go into the basics of alexa skills & lambda use in this readme. https://github.com/alexa/skill-sample-nodejs-howto is a great resource that can help you build and configure Alexa Skills.
+This project contains the Lambda function required for Alexa to interact with Activiti. You will need to change the activiti-alexa-service.js to match your environment. I will not go into the basics of Alexa Skills & Lambda use in this readme. https://github.com/alexa/skill-sample-nodejs-howto is a great resource that can help you build and configure Alexa Skills.
 
 ## Demo specific configuration - Alexa Skills
 
@@ -87,7 +87,7 @@ Service Endpoint Type - Select AWS Lambda ARN (Amazon Resource Name). Now copy t
 2. Go to AWS Management Console -> "Lambda" -> Create a Lambda Function -> Skip Select a Blueprint -> Go to next "Configure triggers" tab -> Select "Alexa Skills Kit" from the list (not all reagios provide this option. I had to use N. Virginia) -> Click Next->Select "Upload a .ZIP file" as Code entry type" -> Give a Name to your function -> Upload the zip generated in the previous step -> Enter "activiti-alexa-service.handler" as Handler -> Choose a role (check the howto guide for more on roles)->Click Next-> Click Create Function-> Notedown the ARN that appears on the top
 If function creation was successful, you would be able to see the activiti-alexa-service.js code in the project in the Lambda console. Now go ahead and edit the variables declared at the top to match your environment. Please note the following two:
 	* if "alfrescoActivitiVersion" is less than 1.5.3.2 you may need to update the "serviceBookingProcessDefinitionId" everytime you modify the business process in Activiti.
-	* appId must be correct set to match the Alexa Skill ID. 
+	* appId must be correctly set to match the Alexa Skill ID. 
 3. Once you have the created the Lambda function you may want to go back to your Skills and update the ARN in your Alexa configuration
 
 Good to go!
