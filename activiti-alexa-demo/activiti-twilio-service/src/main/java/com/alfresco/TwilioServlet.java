@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
 
 public class TwilioServlet extends HttpServlet {
@@ -98,9 +99,18 @@ public class TwilioServlet extends HttpServlet {
 		// Create a list of people we know.
 		
 		HashMap<String, String> callers = new HashMap<String, String>();
-		if(properties.getProperty("twilio.caller.1.number")!=null){
-			callers.put(properties.getProperty("twilio.caller.1.number"), properties.getProperty("twilio.caller.1.name"));
-		}
+		
+		for(Entry<Object, Object> e : properties.entrySet()) {
+			if(e.getKey().toString().startsWith("twilio.caller.id.") && e.getValue()!=null){
+				try {
+					String[] callerIdParts = e.getValue().toString().split(";");
+					callers.put(callerIdParts[1],callerIdParts[0]);
+				} catch (Exception e2) {
+					log.error("unable to add property "+ e.getKey().toString() + " to caller list" );
+				}
+				
+			}
+        }
 
 		// Check & Set Decooda properties
 		if (properties.getProperty("decooda.enabled") != null
