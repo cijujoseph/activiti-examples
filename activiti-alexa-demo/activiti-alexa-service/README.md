@@ -5,7 +5,7 @@ Important - Your Echo device and Alexa skills must be configured using the same 
 
 ## Demo specific configuration - Alexa Skills
 
-* Go to Amazon Developer Console (https://developer.amazon.com/edw/home.html#/) -> Login -> Alexa -> Alexa Skills Kit (Get Started) -> Add a New Skill
+* Go to [Amazon Developer Console](https://developer.amazon.com/edw/home.html#/) -> Login -> Alexa -> Alexa Skills Kit (Get Started) -> Add a New Skill
 
 * Configure Skill Information
 	* Select "Custom Interaction Model"
@@ -92,7 +92,7 @@ Service Endpoint Type - Select AWS Lambda ARN (Amazon Resource Name). Now copy t
 
 ## Create AWS Lambda Function
 
-1. This project (current folder https://github.com/cijujoseph/activiti-examples/tree/master/activiti-alexa-demo/activiti-alexa-service) is a maven based project, build using the command "mvn assembly:single" which will generate a zip file which you can use in the next step. Thanks to Greg's code which I used as a reference - https://github.com/melahn/alexa-alfresco
+1. This project (current folder 'activiti-alexa-service') is a maven based project, build using the command "mvn assembly:single" which will generate a zip file which you can use in the next step. Thanks to Greg's code which I used as a reference - [Alexa-Alfresco](https://github.com/melahn/alexa-alfresco)
 2. Go to AWS Management Console -> "Lambda" -> Create a Lambda Function -> Skip Select a Blueprint -> Go to next "Configure triggers" tab -> Select "Alexa Skills Kit" from the list (not all reagios provide this option. I had to use N. Virginia) -> Click Next->Select "Upload a .ZIP file" as Code entry type" -> Give a Name to your function -> Upload the zip generated in the previous step -> Enter "activiti-alexa-service.handler" as Handler -> Choose a role (check the howto guide for more on roles)->Click Next-> Click Create Function-> Notedown the ARN that appears on the top
 If function creation was successful, you would be able to see the activiti-alexa-service.js code in the project in the Lambda console. Now go ahead and edit the variables declared at the top to match your environment. Please note the following two:
 	* if "alfrescoActivitiVersion" is less than 1.5.3.2 you may need to update the "serviceBookingProcessDefinitionId" everytime you modify the business process in Activiti.
