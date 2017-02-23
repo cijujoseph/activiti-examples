@@ -1,4 +1,4 @@
-#### The project contains all the components of my blog post - [Voice Enabled Business Process using Alfresco Activiti and AWS Alexa](https://community.alfresco.com/people/cjose/blog/2017/02/23/build-a-voice-enabled-business-process-using-alfresco-activiti-and-aws-alexa)
+#### The project contains all the components of my blog post - [Building voice enabled business process using Alfresco Activiti and Amazon Alexa](https://community.alfresco.com/people/cjose/blog/2017/02/23/build-a-voice-enabled-business-process-using-alfresco-activiti-and-aws-alexa)
 
 ### Prerequisites to run this demo end-2-end
 
