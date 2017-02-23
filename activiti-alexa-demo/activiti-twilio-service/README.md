@@ -10,7 +10,7 @@
 
 
 ## Configuration Details Explained
-
+```
 twilio.callercheck.enabled - Value can be true or false. If set to true, caller will get a not recognized message if the number is not configured in the property file!
 twilio.caller.id.n - configure the name and number delimited by a semicolon. Replace "n" with a number. eg: twilio.caller.id.1=Ciju J;+1XXX
 
@@ -19,4 +19,4 @@ deccoda.api.url - decooda API
 decooda.model - decooda model number to use to analyse the customer response.
 
 activiti.api.base.url - Alfresco Activiti base url http://\<user\>:\<pw\>@\<host\>:\<port\>/activiti-app/api/
-
+```
