@@ -22,7 +22,8 @@ var appId = "flzfklasjfk"; /* use an Alexa appid here */ // TODO get this value 
 var serviceBookingProcessDefinitionKey = "VehicleServiceBooking"
 var serviceBookingProcessDefinitionId = "VehicleServiceBooking:49:18271" //This is not required to be set if your Activiti version is 1.5.3.2+ 
 var defaultUser = "Ciju Joseph"
-var defaultContactNumber = "+1XXXXXXXXXX"
+var defaultContactNumber = "+1XXXXXXXXXX"//Please make sure that you are using a valid phone number and this number will be used to send text messages via your twilio account
+var contactEmail = "demo@example.com" //Used for customer notification
 
 /**
  *  Route the incoming request based on the event type
@@ -260,10 +261,11 @@ function scheduleServiceResponse(intentName, session, callback) {
     var request1 = require("request");
     //This if/else is due to a defect that was fixed in 1.5.3.2 https://issues.alfresco.com/jira/browse/ACTIVITI-619
     if(alfrescoActivitiVersion === "1.5.3.2+"){
-        var reqObj = {"values":{"customerName":name, "contactNumber": defaultContactNumber},"processDefinitionKey":serviceBookingProcessDefinitionKey, "name": "Vehicle Service Booking - Alexa"}
+        var reqObj = {"values":{"customerName":name, "contactNumber": defaultContactNumber, "contactEmail": contactEmail},"processDefinitionKey":serviceBookingProcessDefinitionKey, "name": "Vehicle Service Booking - Alexa"}
     } else{
-        var reqObj = {"values":{"customerName":name, "contactNumber": defaultContactNumber},"processDefinitionId":serviceBookingProcessDefinitionId, "name": "Vehicle Service Booking - Alexa"}
+        var reqObj = {"values":{"customerName":name, "contactNumber": defaultContactNumber, "contactEmail": contactEmail},"processDefinitionId":serviceBookingProcessDefinitionId, "name": "Vehicle Service Booking - Alexa"}
     }
+    
     body = JSON.stringify(reqObj)
     request({
         url: startProcessUrl,
