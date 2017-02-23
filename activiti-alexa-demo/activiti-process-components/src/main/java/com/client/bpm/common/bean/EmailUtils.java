@@ -107,6 +107,12 @@ public class EmailUtils {
 		EmailTemplate emailTemplate = emailTemplateService.findCustomEmailTemplate(1L, templateName);
 		ProcessedEmailTemplate emailTemp = emailTemplateService.processCustomEmailTemplate(emailTemplate.getId(), templateVariables);
 		return emailTemp.getBody();
+		
 
+	}
+	
+	public String getEmailTemplateSubject(String templateName) throws Exception  {
+		EmailTemplate emailTemplate = emailTemplateService.findCustomEmailTemplate(1L, templateName);
+		return emailTemplate.getSubject();
 	}
 }

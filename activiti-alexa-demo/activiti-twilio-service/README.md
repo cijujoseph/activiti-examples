@@ -1,4 +1,4 @@
-### A micro service that can handle Twilio incoming calls and talk to the APIs of Activiti, Decooda etc. For more details on TwiML and the associated Java APIs, please refer to the Java quick start available at https://www.twilio.com/docs/quickstart/java/twiml
+### A service/api that can handle Twilio incoming calls and talk to the APIs of Activiti, Decooda etc. For more details on TwiML and the associated Java APIs, please refer to the Java quick start available at https://www.twilio.com/docs/quickstart/java/twiml
 
 ## Usage of this webapp in the demo
 

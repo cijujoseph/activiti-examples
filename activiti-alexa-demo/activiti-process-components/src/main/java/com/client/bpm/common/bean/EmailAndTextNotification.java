@@ -39,7 +39,7 @@ public class EmailAndTextNotification implements JavaDelegate {
 				// Add all process variables to freemarker template variable map
 				templateVariables.putAll(execution.getVariables());
 				String template = env.getProperty("customer.email.template", "custom-email-template.ftl");
-				String subject = env.getProperty("customer.email.subject", "Thank you for servicing with Alfresco Services!"); 
+				String subject = emailUtils.getEmailTemplateSubject(template);
 				String emailAddress = execution.getVariable("contactEmail")!=null ? execution.getVariable("contactEmail").toString() : env.getProperty("customer.email.address");
 				String[] toList = { emailAddress };
 				try {
