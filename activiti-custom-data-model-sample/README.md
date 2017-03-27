@@ -8,13 +8,11 @@
 	2. Validate the data entered by user against what is recorded in the policy using Decision Tables and prompt user to update the policy details.
 	3. Create a claim entry in the external claims system. In this example external source is Elasticsearch.
 
-
 ## Configuration Steps
 
 1. Enable the HTTP endpoint my modifying the following two properties in the activiti-app.properties file.
 	1.	elastic-search.enable.http=true
 	2.	elastic-search.enable.http.cors=true
-	
 2. Deploy the "activiti-custom-data-model-sample-1.0.0-SNAPSHOT.jar" available in this project to activiti-app/WEB-INF/lib
 3. Import the "InsuranceDemoApp.zip" in this project into your instance and publish the app.
 
@@ -26,6 +24,6 @@
 4. As part of the claims process I'm also creating a claims entry into Elasticsearch using the Datamodel.
 
 ### If you would like to see the data directly from the external data source, use the following URLS.
-1.	http://localhost:9200/insuranceindex/policyevent/<policyId>
-2.	http://localhost:9200/insuranceindex/claimevent/<claimId entered in 'Review Claim' task>
+1.	http://localhost:9200/insuranceindex/policyevent/<Policy Id>
+2.	http://localhost:9200/insuranceindex/claimevent/<Claim Id entered in 'Review Claim' task>
 
