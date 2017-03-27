@@ -14,7 +14,9 @@
 1 Enable the HTTP endpoint my modifying the following two properties in the activiti-app.properties file.
 	*	elastic-search.enable.http=true
 	*	elastic-search.enable.http.cors=true
+	
 2 Deploy the "activiti-custom-data-model-sample-1.0.0-SNAPSHOT.jar" available in this project to activiti-app/WEB-INF/lib
+
 3 Import the "InsuranceDemoApp.zip" in this project into your instance and publish the app.
 
 ## Run & Observe Steps
