@@ -24,6 +24,6 @@
 4. As part of the claims process I'm also creating a claims entry into Elasticsearch using the Datamodel.
 
 ### If you would like to see the data directly from the external data source, use the following URLS.
-1.	http://localhost:9200/insuranceindex/policyevent/<Policy Id>
+1.	http://localhost:9200/insuranceindex/policyevent/<<Policy Id>>
 2.	http://localhost:9200/insuranceindex/claimevent/<Claim Id entered in 'Review Claim' task>
 
