@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.alfresco</groupId>
+	<artifactId>activiti-ee-parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>activiti-ee-parent</name>
+	<description>Parent POM for all BPM modules</description>
+
+	<properties>
+		<aps.version>1.6.0</aps.version>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.activiti</groupId>
+			<artifactId>activiti-app-dependencies</artifactId>
+			<version>${aps.version}</version>
+			<type>pom</type>
+			<exclusions>
+				<exclusion>
+					<groupId>org.alfresco.cmis.client</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.aspose</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.alfresco.officeservices</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<inherited>true</inherited>
+				<configuration>
+					<classpathContainers>
+						<classpathContainer>org.eclipse.jdt.USER_LIBRARY/Activiti Designer
+							Extensions</classpathContainer>
+					</classpathContainers>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>alfresco-artifacts-repository</id>
+			<name>Alfresco EE releases</name>
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-enterprise-releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>mvn-repository</id>
+			<name>MVN REPO</name>
+			<url>https://mvnrepository.com/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
