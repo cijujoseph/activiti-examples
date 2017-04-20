@@ -13,3 +13,8 @@
     ]
 }`
 3. Import the app zip file and run it in APS.
+
+A screenshot of the form given below
+
+![alt tag]( https://github.com/cijujoseph/activiti-examples/blob/master/stencil-samples/tinymce-rich-text-editor/form-screenshot.png )
+
