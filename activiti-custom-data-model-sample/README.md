@@ -1,6 +1,6 @@
 #### Use of custom Datamodel to get a business process talking to Elasticsearch. The embedded Elasticsearch instance which comes with Alfresco Process Services (Enterprise Activiti) is used as the data source in this example. 
 
-To get an overview of this module, please read my blog at https://community.alfresco.com/community/bpm/blog/2017/04/12/business-data-integration-made-easy-with-data-models
+This project is also explained in a blog which is available at https://community.alfresco.com/community/bpm/blog/2017/04/12/business-data-integration-made-easy-with-data-models
 
 ## Overview of the processes used in this example
 
