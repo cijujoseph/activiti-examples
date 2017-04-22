@@ -1,0 +1,18 @@
+[ {
+  "systemIdentifier" : "CIJU",
+  "name" : {
+    "familyName" : "JOSEPH",
+    "fullName" : "CIJU JOSEPH",
+    "givenName" : "CIJU",
+    "titles" : [ "MR" ]
+  }
+  "department" : {
+    "code" : "SALES"
+  },
+  "employeeNumber" : "1234",
+  "manager" : {
+    "systemIdentifier" : "MIKE",
+    "employeeNumber" : "34456"
+  },
+  "type" : "Staff"
+}]
