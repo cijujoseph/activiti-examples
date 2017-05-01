@@ -2,6 +2,8 @@
 
 ### General instructions to run these above examples
 
+Some of these components are explained in my [stencil sample blog](https://community.alfresco.com/community/bpm/blog/2017/05/01/form-stencil-examples-alfresco-process-services-aps) as well 
+
 Unless specified otherwise in the respective folders, the zip archive files available in the sample folders are “App” exports. To to use them, you will need to import them via App Designer (Kickstart App) -> Apps -> Import App. Once the “App” is successfully imported, the stencils along with an example process and form will also get imported which will make it easy for you to see these examples in action!
 
 ### List of examples
