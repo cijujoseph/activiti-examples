@@ -1,6 +1,6 @@
 #### Alfresco Process Service integration with Amazon DynamoDB using Data Model. 
 
-This project is a replica of [activiti-custom-data-model-sample] (https://github.com/cijujoseph/activiti-examples/tree/master/activiti-custom-data-model-sample) and I replaced Elasticsearch with Amazon DynamoDB data source. To get an overview of the parent project, please refer [Business Data Integration Made Easy With Data Models] (https://community.alfresco.com/community/bpm/blog/2017/04/12/business-data-integration-made-easy-with-data-models)
+This project is a replica of [activiti-custom-data-model-sample](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-custom-data-model-sample) and I replaced Elasticsearch with Amazon DynamoDB data source. To get an overview of the parent project, please refer [Business Data Integration Made Easy With Data Models](https://community.alfresco.com/community/bpm/blog/2017/04/12/business-data-integration-made-easy-with-data-models)
 
 This project and its setup is explained in the blog - 
 
