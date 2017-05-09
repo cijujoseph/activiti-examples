@@ -4,7 +4,7 @@ This project is a replica of [activiti-custom-data-model-sample](https://github.
 
 This project and its setup is also explained at - <placeholder for a blog post!>
 
-##Prerequisites
+## Prerequisites
 1. This example is built and tested against Alfresco Process Service Version 1.6.1
 
 ## Configuration Steps
