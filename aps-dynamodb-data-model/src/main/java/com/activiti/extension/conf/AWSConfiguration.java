@@ -1,9 +1,11 @@
 package com.activiti.extension.conf;
 
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -32,8 +34,10 @@ public class AWSConfiguration {
 	@Bean
 	public DynamoDB dynamoDB() {
 		BasicAWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
-		AmazonDynamoDB amazonDynamoDBClient = new AmazonDynamoDBClient(credentials)
-				.withRegion(Regions.fromName(regionName));
+		AmazonDynamoDB amazonDynamoDBClient = AmazonDynamoDBClientBuilder.standard()
+							.withCredentials(new AWSStaticCredentialsProvider(credentials))
+							.withRegion(Regions.fromName(regionName))
+							.build();
 		return new DynamoDB(amazonDynamoDBClient);
 	}
 
