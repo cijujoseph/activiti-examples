@@ -2,10 +2,10 @@
 
 This project is a replica of [activiti-custom-data-model-sample](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-custom-data-model-sample) and I replaced Elasticsearch with Amazon DynamoDB data source. To get an overview of the parent project, please refer [Business Data Integration Made Easy With Data Models](https://community.alfresco.com/community/bpm/blog/2017/04/12/business-data-integration-made-easy-with-data-models)
 
-This project and its setup is explained in the blog - 
+This project and its setup is also explained at - <placeholder for a blog post!>
 
-Prerequisites
-
+##Prerequisites
+1. This example is built and tested against Alfresco Process Service Version 1.6.1
 
 ## Configuration Steps
 1. Create the following two tables in Amazon DynamoDB.
