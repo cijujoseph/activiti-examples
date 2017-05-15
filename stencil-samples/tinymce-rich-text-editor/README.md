@@ -16,5 +16,5 @@
 
 A screenshot of the form given below
 
-![alt tag]( https://github.com/cijujoseph/activiti-examples/blob/master/stencil-samples/tinymce-rich-text-editor/form-screenshot.png )
+![alt tag]( https://github.com/cijujoseph/activiti-examples/blob/master/stencil-samples/tinymce-rich-text-editor/form-screenshot.jpg )
 
