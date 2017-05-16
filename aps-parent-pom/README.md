@@ -1,0 +1,2 @@
+When you are creating multiple java libraries to be used in Alfresco Process Services powered by Activiti, it is always a good idea to use a parent POM file for all your java components. This will come in handy especially is scenarios like version upgrade where you don't have to go into each components to change the version number. 
+This is a POM project which will bring in all the Alfresco Process Services dependencies from the Alfresco Repo.
