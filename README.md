@@ -1,2 +1,2 @@
 # activiti-examples
-activiti bpm code examples - mostly Activiti Enterprise Edition code samples
+Activiti BPM code examples - mostly Alfresco Process Services powered by Activiti (Activiti Enterprise Edition) code samples
