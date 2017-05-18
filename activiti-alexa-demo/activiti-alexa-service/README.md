@@ -9,6 +9,7 @@ Important - Your Echo device and Alexa skills must be configured using the same 
 
 * Configure Skill Information
 	* Select "Custom Interaction Model"
+  * Depending on the echo device you are using, please select the language accordingly. For example: If you select English(US) and if you try using this skill with UK Echo device, it may not work!
 	* Name -> Booking Service
 	* Invocation Name -> alfresco services
 
