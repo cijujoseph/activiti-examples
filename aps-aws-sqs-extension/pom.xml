@@ -56,8 +56,8 @@
 				</configuration>
 			</plugin>
 			<!-- Since the product contains a different version of AWS SDKs internally, 
-				using maven-shade-plugin to use the latest AWS libraries for my data model 
-				implementation -->
+				using maven-shade-plugin to use the latest AWS libraries for this 
+				implementation. -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
