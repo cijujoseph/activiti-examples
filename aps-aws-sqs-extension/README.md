@@ -2,6 +2,8 @@
 
 This is a very simple extension project/jar demonstrating the integration of [Alfresco Process Services](https://www.alfresco.com/platform/process-services-bpm) with [Amazon Simple Queue Service (SQS)](https://aws.amazon.com/sqs) using [Spring Cloud](http://projects.spring.io/spring-cloud/)
 
+This project is also explained in this [community blog](https://community.alfresco.com/community/bpm/blog/2017/05/23/integrating-alfresco-process-services-with-amazon-sqs-and-apache-activemq)
+
 ## Prerequisites
 1. This example is built and tested against Alfresco Process Service Version 1.6.1
 

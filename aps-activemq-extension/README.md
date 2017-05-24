@@ -2,6 +2,9 @@
 
 This is a very simple extension project/jar demonstrating the integration of [Alfresco Process Services](https://www.alfresco.com/platform/process-services-bpm) with [Apache ActiveMQ](http://activemq.apache.org/)
 
+This project is also explained in this [community blog](https://community.alfresco.com/community/bpm/blog/2017/05/23/integrating-alfresco-process-services-with-amazon-sqs-and-apache-activemq)
+
+
 ## Prerequisites
 1. This example is built and tested against Alfresco Process Service Version 1.6.1 and ActiveMQ 5.14.5
 2. Apache ActiveMQ must be installed and started. The extension project is built using the default credentials & ports which Active MQ use which are port 61616 and admin/admin respectively. Since I haven't externalized these properties you will need to recompile this project if you have a different connection setting.
