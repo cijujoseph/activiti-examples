@@ -1,0 +1,116 @@
+/* Utils */
+body, html {
+  height: 100%;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.loader-container {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  height: 100%;
+}
+
+.loader-item {
+  margin: auto;
+  max-height: 100px;
+  max-width: 300px;
+}
+
+.loader-text {
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+}
+
+._dialog_overlay {
+  position: static !important;
+}
+
+.main_header_adf .mdl-layout__drawer-button {
+  right: 0 !important;
+  left: initial !important;
+  left: auto;
+}
+
+.mdl-layout__header {
+  color: rgb(255, 255, 255);
+  /*background-color: rgb(31, 188, 210);*/
+  background-color: rgb(0, 0, 0);
+}
+
+.mdl-layout__header .material-icons {
+  color: rgb(255, 255, 255);
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  color: rgb(255, 255, 255);
+}
+
+.md-simple-snackbar-action {
+  border: 0px;
+  cursor: pointer;
+}
+
+
+/* Additions by ACV for Demo*/
+
+.container-widget .mdl-textfield__input {
+    
+    background: #F4F6F7;  
+    box-shadow: 2px 2px 2px #E5E7E9;
+}
+.container-widget {
+/*    box-shadow: 10px 10px 5px #888888; */
+    box-shadow: 10px 10px 5px #E5E7E9; 
+    background-color: #F8F9F9;
+    width:85%;
+}
+
+.mdl-layout__tab-bar-button.mdl-layout__tab-bar-right-button{
+    background-color: gray;
+    color: gray;
+}
+.mdl-layout__tab-bar-button.mdl-layout__tab-bar-left-button{
+    background-color: gray;
+    color: gray;
+}
+
+
+.mdl-data-table__cell--non-numeric {
+  color:rgb(123,36,28);
+  /*background-color: red;*/
+  /*background: red;*/
+}
+
+
+.activiti-task-header__value {
+    color: rgb(123,36,28);
+}
+
+.mdl-card__title.title.container-title-details {
+  background-color: gray;
+
+}
+
+
+.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored{
+    background-color: rgb(123,36,28);
+}
+
+.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored{
+    background-color: rgb(123,36,28);
+    color: white;
+}

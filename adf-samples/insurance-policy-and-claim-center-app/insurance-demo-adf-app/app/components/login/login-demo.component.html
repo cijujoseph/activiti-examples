@@ -1,0 +1,39 @@
+
+<!--LOGIN-->
+
+<alfresco-login #alfrescologin
+                [providers]="providers"
+                [fieldsValidation]="customValidation"
+                [disableCsrf]="disableCsrf"
+                (executeSubmit)="validateForm($event)"
+                (onSuccess)="onLogin($event)"
+                (onError)="onError($event)"
+                [backgroundImageUrl]="'/images/InsuranceBackground.jpg'"
+                [logoImageUrl]="'/images/InsuranceLogo.png'">
+  <!--div class="mobile-settings">
+    <p>
+      <label for="switch1-mobile" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+        <input type="checkbox" id="switch1-mobile" [checked]="isECM" class="mdl-switch__input"
+               (click)="toggleECM()">
+        <span class="mdl-switch__label">Content Services</span>
+      </label>
+    </p>
+    <p>
+      <label for="switch2-mobile" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+        <input type="checkbox" id="switch2-mobile" [checked]="isBPM" class="mdl-switch__input"
+               (click)="toggleBPM()">
+        <span class="mdl-switch__label">Process Services</span>
+      </label>
+    </p>
+    <p>
+      <label for="switch3-mobile" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+        <input type="checkbox" id="switch3-mobile" class="mdl-switch__input" [checked]="!disableCsrf" (click)="toggleCSRF()">
+        <span class="mdl-switch__label">CSRF</span>
+      </label>
+    </p>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" [(ngModel)]="blackListUsername" id="blacklistusername"/>
+      <label class="mdl-textfield__label" for="blacklistusername">Banned username</label>
+    </div>
+  </div-->
+</alfresco-login>

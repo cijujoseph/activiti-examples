@@ -1,0 +1,32 @@
+
+<div class="mdl-card__title title container-title-details">
+    <h2 class="mdl-card__title-text title-details">Policy List</h2>
+</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-shadow--2dp"
+         [class.mdl-cell--12-col]="!selectedNodeProperties">
+        <!--div style="padding-bottom: 4px;">
+            <button
+                class="mdl-button mdl-js-button mdl-button--icon"
+                (click)="onHomeClicked()">
+                <i class="material-icons">home</i>
+            </button>
+        </div-->
+        <div>
+            <alfresco-datatable
+            [data]="data"
+            [actions]="true"
+            (rowClick)="policyDetails($event)">
+             <!--
+                 (showRowContextMenu)="onShowRowContextMenu($event)">
+                 content-actions>
+                        <content-action
+                            target="folder"
+                            title="View details"
+                            (execute)="policyDetails($event)">
+                        </content-action>
+            </content-actions-->
+        </alfresco-datatable>
+        </div>
+    </div>   
+</div>

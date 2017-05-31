@@ -1,0 +1,83 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <header class="mdl-layout__header my-tab-hdr">
+
+    <!-- TABS -->
+
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a id="tasks-header" href="#mytasks" class="mdl-layout__tab is-active" (click)="myOpenTasksClicked()">Tasks To Complete</a>
+      <a id="tasks-header" href="#mytasks" class="mdl-layout__tab" (click)="myCompletedTasksClicked()">Completed Tasks</a>
+      <a id="tasks-filters" href="#taskfilters" class="mdl-layout__tab desktop-only" (click)="advancedTaskFilterClicked()">Advanced</a>
+    </div>
+  </header>
+
+  <main class="mdl-layout__content activiti">
+
+    <!--  TASKS COMPONENT -->
+
+    <section class="mdl-layout__tab-panel is-active" id="mytasks">
+      <div class="page-content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp" *ngIf="myTaskList">
+            <!--span><h5>{{taskListDisplayName}}</h5></span>
+            <hr-->
+            <activiti-tasklist [assignment]="'assignee'"
+                               [state]="taskState"
+                               [data]="myTaskListDataTable"
+                               (rowClick)="onTaskRowClick($event)" (onSuccess)="onSuccessTaskList($event)"
+                               #activititasklist></activiti-tasklist>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp" *ngIf="!myTaskList">
+            <span><h5>Task Details</h5></span>
+            <hr>
+            <activiti-task-details [taskId]="currentTaskId" (formCompleted)="onFormCompletedInTaskList($event)"
+                                 [showFormRefreshButton]="false" [showFormTitle]="false"  #activitidetails></activiti-task-details>
+          </div>
+          <!-- (formLoaded)='onFormLoaded($event)'-->
+         <!-- <div class="mdl-cell mdl-cell--2-col mdl-shadow--2dp" *ngIf="!myTaskList">
+            <span><h5>Comments</h5></span>
+            <hr>
+            <activiti-comments [taskId]="currentTaskId" [readOnly]="false"  #activitidetails></activiti-comments>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+    <section class="mdl-layout__tab-panel is-active" id="taskfilters">
+      <div class="page-content" *ngIf="taskFilterTabActive">
+        <!--with query param to filter -->
+       <!-- <iframe src="http://localhost:5601/app/kibana#/dashboard/68957b60-fd40-11e6-b6e7-55ea4636abd2?embed=true&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90d%2Cmode%3Aquick%2Cto%3Anow))&_a=(query:(query_string:(analyze_wildcard:!t,query:'ActivtiIdOfStartUser:11')))" height="600" width="800"></iframe>-->
+       <!--without query param-->
+      <!--<iframe src="http://localhost:5601/app/kibana#/dashboard/68957b60-fd40-11e6-b6e7-55ea4636abd2?embed=true&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90d%2Cmode%3Aquick%2Cto%3Anow))" height="1080" width="800"></iframe>
+       --><div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col task-column mdl-shadow--2dp">
+            <span><h5>Task Filters</h5></span>
+            <hr>
+            <activiti-filters [appId]="appId" (filterClick)="onTaskFilterClick($event)"
+                              (onSuccess)="onSuccessTaskFilterList($event)"
+                              #activitifilter></activiti-filters>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col task-column mdl-shadow--2dp list-column">
+            <span><h5>Task List</h5></span>
+            <hr>
+            <activiti-tasklist *ngIf="taskFilter?.hasFilter()" [appId]="taskFilter.appId"
+                               [processDefinitionKey]="taskFilter.filter.processDefinitionKey"
+                               [name]="taskFilter.filter.name"
+                               [assignment]="taskFilter.filter.assignment"
+                               [state]="taskFilter.filter.state"
+                               [sort]="taskFilter.filter.sort"
+                               [data]="dataTasks"
+                               (rowClick)="onTaskRowClick($event)" (onSuccess)="onSuccessTaskList($event)"
+                               #activititasklist></activiti-tasklist>
+          </div>
+          <div class="mdl-cell mdl-cell--7-col task-column mdl-shadow--2dp">
+            <span><h5>Task Details</h5></span>
+            <hr>
+            <activiti-task-details [taskId]="currentTaskId" (formCompleted)="onFormCompleted($event)"
+                                   #activitidetails></activiti-task-details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

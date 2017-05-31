@@ -1,0 +1,54 @@
+.activiti-task-list__item:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.activiti {
+  background-color: #f5f5f5;
+}
+
+.task-column {
+  background-color: #f5f5f5;
+  padding: 10px 10px 10px 10px;
+  border-right: solid 2px rgb(144, 143, 143);
+}
+
+.list-column {
+  width: 320px;
+}
+
+.mdl-layout__header {
+  z-index: 1;
+}
+
+.my-tab-hdr{
+   /*background-color:#dd1134;
+   background-color:#004990;*/
+   min-height: 10px;
+}
+
+.mdl-js-ripple-effect {
+  background-color: gray;
+  
+}
+.mdl-layout--fixed-header{
+    background-color: gray;
+}
+
+
+
+.mdl-layout__tab{
+   color: rgb(234, 236, 238);
+}
+
+@media all and (max-width: 1024px) {
+  .desktop-only {
+  display: none;
+  }
+}
+
+@media (max-device-width: 1024px){
+  .desktop-only {
+  display: none;
+  }
+}
