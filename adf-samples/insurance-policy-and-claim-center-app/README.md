@@ -16,11 +16,11 @@ Components in the architecture are:
 
 ## Configuration Steps
 1. Import one of the following two process apps into your APS instance (APS UI->App Designer->Apps->Import App) and publish the app. Once the app is published/deployed, go to the landing(home) page of APS and make sure that the app named "InsuranceProcessSuite" is added to the landing page. 
-	```
-	> demo-resources/InsuranceProcessSuite_With-ACS-Integration.zip 
-							*OR*
-	> demo-resources/InsuranceProcessSuite.zip. (The processes in this app are built without ACS integration. Use this if you do not have ACS installed.)
-	```
+	
+	 > demo-resources/InsuranceProcessSuite_With-ACS-Integration.zip 
+							
+	 > demo-resources/InsuranceProcessSuite.zip. The processes in this app are built without ACS integration. Use this if you do not have ACS installed.
+	
 2. Since I'm using a custom data model using the embedded Elasticsearch instance of APS, we need to enable the HTTP endpoint of APS Elasticsearch by modifying the following two properties in the activiti-app.properties file. For more details on this component and configuration, please refer [activiti-custom-data-model-sample](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-custom-data-model-sample)
 	```
 	elastic-search.enable.http=true
@@ -28,15 +28,18 @@ Components in the architecture are:
 	```
 3. Deploy the "activiti-custom-data-model-sample-1.0.0-SNAPSHOT.jar" available in this project to activiti-app/WEB-INF/lib. This is the implementation library of the above mentioned custom data model.
 4. Import the following forms into your APS instance. These forms are used in the ADF application to display the records from the System of Record (Elasticsearch).
-	1. demo-resources/Insurance_Form_ADF.json
-	2. demo-resources/Property Claim - ADF.json
+	 
+	 > demo-resources/Insurance_Form_ADF.json
+	 
+	 > demo-resources/Property Claim - ADF.json
+	 
 5. Update the insurance-demo-adf-app/environments/environment.ts file with your environment details. Please find below the explanation of the properties used in this file
 	
-	 > providers -> Use 'BPM' if you donot have ACS installed and configured to work with APS. If both ACS and APS are available, use 'ALL'
+	 > providers: Use 'BPM' if you donot have ACS installed and configured to work with APS. If both ACS and APS are available, use 'ALL'
   	
-	 > ecmUrl -> The base url of ACS. Ignored if providers is set to 'BPM'
+	 > ecmUrl: The base url of ACS. Ignored if providers is set to 'BPM'
     
-	 > adminGroupName -> The group name which we will create in APS in step 7 below.
+	 > adminGroupName: The group name which we will create in APS in step 7 below.
   	
 	 > bpmUrl: The base url of APS.
   	
