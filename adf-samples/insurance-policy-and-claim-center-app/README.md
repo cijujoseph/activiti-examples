@@ -31,7 +31,7 @@ Components in the architecture are:
 	1. demo-resources/Insurance_Form_ADF.json
 	2. demo-resources/Property Claim - ADF.json
 5. Update the insurance-demo-adf-app/environments/environment.ts file with your environment details. Please find below the explanation of the properties used in this file
-	```
+	
 	 > providers -> Use 'BPM' if you donot have ACS installed and configured to work with APS. If both ACS and APS are available, use 'ALL'
   	
 	 > ecmUrl -> The base url of ACS. Ignored if providers is set to 'BPM'
@@ -49,7 +49,7 @@ Components in the architecture are:
 	 > policyDetailsFormId: The ID of the policy form that is imported in step 4 above. APS UI->App Designer->Forms->"Insurance_Form_ADF"->Check url for the form ID
   	 
 	 > processAppId: The Runtime ID of the imported (step 1) "InsuranceProcessSuite" process application. Check the URL by clicking on "APS Home Page -> "InsuranceProcessSuite"->Check url for the App ID
-	```
+	
 6. Start the ADF application by executing the following commands.
 	```
 	cd insurance-demo-adf-app
