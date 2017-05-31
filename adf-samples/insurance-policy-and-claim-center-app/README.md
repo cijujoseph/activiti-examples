@@ -12,7 +12,7 @@ Components in the architecture are:
 * Alfresco Process Services: Platform to model and run the business processes.
 * Alfresco Content Services: Platform to manage enterprise contents/documents.
 * System Of Record: Various business data stores in an enterprise. eg: Salesforce, SAP, Databases etc 
-* Business Intelligence Warehouse: Enterprise wide BI platform. Not included in this demo app setup, however possible to utilize them in the ADF application.
+* Business Intelligence Warehouse: Enterprise wide BI platform. **Not included in this demo app setup, however possible to utilize them in the ADF application.**
 
 ## Configuration Steps
 1. Import one of the following two process apps into your APS instance (APS UI->App Designer->Apps->Import App) and publish the app. Once the app is published/deployed, go to the landing(home) page of APS and make sure that the app named "InsuranceProcessSuite" is added to the landing page. 
