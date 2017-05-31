@@ -10,12 +10,12 @@
 				OR
 	2. demo-resources/InsuranceProcessSuite_With-ACS-Integration.zip
 
-2. Enable the HTTP endpoint of APS Elasticsearch by modifying the following two properties in the activiti-app.properties file.
+2. Since I'm using a custom data model using the inbuilt Elasticsearch instance of APS, we need to enable the HTTP endpoint of APS Elasticsearch by modifying the following two properties in the activiti-app.properties file. For more details on this component and configuration, please refer [activiti-custom-data-model-sample](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-custom-data-model-sample)
 	```
 	elastic-search.enable.http=true
 	elastic-search.enable.http.cors=true
 	```
-3. Deploy the "activiti-custom-data-model-sample-1.0.0-SNAPSHOT.jar" available in this project to activiti-app/WEB-INF/lib
+3. Deploy the "activiti-custom-data-model-sample-1.0.0-SNAPSHOT.jar" available in this project to activiti-app/WEB-INF/lib.
 
 4. Import the following forms into your APS instance and note down the formids from APS UI.
 	1. demo-resources/Insurance_Form_ADF.json
