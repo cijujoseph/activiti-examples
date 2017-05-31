@@ -75,7 +75,7 @@ export class LoginDemoComponent implements OnInit {
         } else {
           this.storage.setItem('externalId', this.bpmUser.email);
         }
-        if ((this.bpmUser.groups.filter(group => group.name === 'admin-group' && group.type === 1 && group.status === 'active').length) === 1) {
+        if ((this.bpmUser.groups.filter(group => group.name === environment.adminGroupName && group.type === 1 && group.status === 'active').length) === 1) {
           this.storage.setItem('adminUser', 'true');
         } else {
           this.storage.setItem('adminUser', 'false');

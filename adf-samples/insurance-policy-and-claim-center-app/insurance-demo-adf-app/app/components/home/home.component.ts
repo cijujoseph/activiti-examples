@@ -19,6 +19,7 @@ import { Component } from '@angular/core';
 
 import { BpmUserService } from 'ng2-alfresco-userinfo';
 import { BpmUserModel } from 'ng2-alfresco-userinfo/src/models/bpm-user.model';
+import { environment } from '../../../environments/environment';
 
 @Component({
     selector: 'home-view',
@@ -38,7 +39,7 @@ export class HomeComponent {
         this.bpmUserService.getCurrentUserInfo()
             .subscribe((res) => {
                 this.bpmUser = <BpmUserModel>res;
-                if ((this.bpmUser.groups.filter(group => group.name === 'admin-group' && group.type === 1 && group.status === 'active').length) === 1) {
+                if ((this.bpmUser.groups.filter(group => group.name === environment.adminGroupName && group.type === 1 && group.status === 'active').length) === 1) {
                     this.adminUser = true;
                 }
             });
