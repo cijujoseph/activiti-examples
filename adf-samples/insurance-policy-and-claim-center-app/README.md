@@ -32,7 +32,7 @@ Components in the architecture are:
 	 > demo-resources/Insurance_Form_ADF.json
 	 
 	 > demo-resources/Property Claim - ADF.json
-	 
+
 5. Update the insurance-demo-adf-app/environments/environment.ts file with your environment details. Please find below the explanation of the properties used in this file
 	
 	 > providers: Use 'BPM' if you donot have ACS installed and configured to work with APS. If both ACS and APS are available, use 'ALL'
@@ -65,14 +65,14 @@ Components in the architecture are:
 ## Demo App Highlights
 1. Mobile friendly app!
 2. Control access permissions centrally via groups defined in APS/LDAP
-	Eg: admin users able to see all policies, all tasks, all documents etc. A normal user to see only his/her policies and claims. Explore this by looging in as a user who is part of the group "admin-group" and by logging as a normal user who is not part of this group.
+	. Eg: admin users able to see all policies, all tasks, all documents etc. A normal user to see only his/her policies and claims. Explore this by looging in as a user who is part of the group "admin-group" and by logging as a normal user who is not part of this group.
 3. Policy and Claim data retrieved from the respective System of Records (Elasticsearch in this example)
 4. Use of Google Material Design components - Menu bar, Badges(Task Inbox Number), Icons (Side bar), Toggles (Open/Completed task), Buttons etc
 5. Use of ADF components to show the data from System of Records
-	Eg: ADF Datatable component used to list the claims and processes fetched from Elasticsearch
-	Eg: Use of APS Forms outside of process to show data from Elasticsearch.
+	. Eg: ADF Datatable component used to list the claims and processes fetched from Elasticsearch
+	. Eg: Use of APS Forms outside of process to show data from Elasticsearch.
 6. Mashup data and show documents and process data in a single page – 
-	Eg: claim details, policy details pages.
+	. Eg: claim details, policy details pages.
 7. Custom logic to populate forms.
-	Eg: Option to clone a claim using the data from a previous claim. 
-    Eg: Option to start a claim from a policy details page copying data from policy such as policy number, contact details etc
+	. Eg: Option to clone a claim using the data from a previous claim. 
+    . Eg: Option to start a claim from a policy details page copying data from policy such as policy number, contact details etc
