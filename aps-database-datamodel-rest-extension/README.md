@@ -36,8 +36,8 @@ Let me now show a simple example with few screenshots.
 
 ![Data Model Attribute Renaming](example/screenshots/entity-attribute-names-beautified.png)
 
-![Data Model Modified API Get Details](example/screenshots/entity-lookup-get-details-after-attribute-renaming)
+![Data Model Modified API Get Details](example/screenshots/entity-lookup-get-details-after-attribute-renaming.png)
 
-![Data Model Modified API Get List](example/screenshots/entity-lookup-get-list-after-attribute-renaming)
+![Data Model Modified API Get List](example/screenshots/entity-lookup-get-list-after-attribute-renaming.png)
 
 
