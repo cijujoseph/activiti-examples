@@ -8,11 +8,11 @@ To configure this extension it is easy, all you have to do is place the aps-data
 
 ### Available REST APIs 
 
-1. GET http://\<aps-host-name\>\:<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>. This API will get all the entries from the database based on your data model definition. Basically this is the equivalent of "SELECT * FROM TABLE_NAME". One of the common use cases of this API is to show all the entries in a table as a drop down in a form field! Another use case is to display all the entries in a form table.
+1. **GET http://\<aps-host-name\>\:<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>**. This API will get all the entries from the database based on your data model definition. Basically this is the equivalent of "SELECT * FROM TABLE_NAME". One of the common use cases of this API is to show all the entries in a table as a drop down in a form field! Another use case is to display all the entries in a form table.
 
-2. GET http://\<aps-host-name\>:\<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>/\<keyValue\>?keyName=\<keyName\>. This is to get/lookup a row in the table using a where clause. Equivalent of "SELECT * FROM TABLE_NAME WHERE \<key name(DataModel Entity Attribute Name)\>=\<key value\>".
+2. **GET http://\<aps-host-name\>:\<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>/\<keyValue\>?keyName=\<keyName\>**. This is to get/lookup a row in the table using a where clause. Equivalent of "SELECT * FROM TABLE_NAME WHERE \<key name(DataModel Entity Attribute Name)\>=\<key value\>".
 
-Since the APIs are under '/activiti-app/api/enterprise', they are secured using HTTP Basic Auth by default.
+Since the APIs are under '/activiti-app/api/enterprise', they are secured using HTTP Basic Authentication by default. For more information around custom REST endpoints, please refer [User Guide](http://docs.alfresco.com/process-services1.6/topics/custom_rest_endpoints.html)
 
 ## An Example & Screenshots
 Let me now show a simple example with few screenshots.
@@ -32,7 +32,7 @@ Let me now show a simple example with few screenshots.
 
 ![Data Model API Get List](example/screenshots/entity-lookup-get-list.png)
 
-* 	Step 5: If you look at the above screenshot, you can see that the fields/attributes in the REST response looks very DB-ish! Let's now beautify the REST response to make the response look a little REST-ish. All you have to do is edit the data model attribute names based on your choice of naming convention (eg: lower camel case in this example).
+* 	Step 5: If you look at the above screenshot, you can see that the fields/attributes in the REST response looks very DB-ish! This is because I created the data model entity using the "import attributes" feature in data model configuration. When using this feature  the attributes will be created with the column names of the database table. Let's now beautify the REST response to make the response look a little REST-ish. All you have to do is edit the data model attribute names based on your choice of naming convention (eg: lower camel case in this example).
 
 ![Data Model Attribute Renaming](example/screenshots/entity-attribute-names-beautified.png)
 
