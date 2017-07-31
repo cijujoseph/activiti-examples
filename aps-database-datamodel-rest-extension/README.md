@@ -8,9 +8,9 @@ To configure this extension it is easy, all you have to do is place the aps-data
 
 ### Available REST APIs 
 
-1. **GET http://\<aps-host-name\>\:<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>**. This API will get all the entries from the database based on your data model definition. Basically this is the equivalent of "SELECT * FROM TABLE_NAME". One of the common use cases of this API is to show all the entries in a table as a drop down in a form field! Another use case is to display all the entries in a form table.
+1. **GET http://\<aps-host-name\>\:<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>?keyName=keyValue**. This API will get all the entries from the database based on your data model definition. Basically this is the equivalent of "SELECT * FROM TABLE_NAME". One of the common use cases of this API is to show all the entries in a table as a drop down in a form field! Another use case is to display all the entries in a form table. Optionally you can provide additional keyName=keyValue query parameters to filter the result set.
 
-2. **GET http://\<aps-host-name\>:\<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>/\<keyValue\>?keyName=\<keyName\>**. This is to get/lookup a row in the table using a where clause. Equivalent of "SELECT * FROM TABLE_NAME WHERE \<key name(DataModel Entity Attribute Name)\>=\<key value\>".
+2. **GET http://\<aps-host-name\>:\<aps-port-number\>/activiti-app/api/enterprise/custom-api/datamodels/\<data-model-id\>/entities/\<entity-name\>/\<keyValue\>?keyName=\<keyName\>**. This is to get/lookup **a single row** from the table using a where clause. Equivalent of "SELECT * FROM TABLE_NAME WHERE \<key name(DataModel Entity Attribute Name)\>=\<key value\>". Please note, this api expects a single row as a response. If your query can return multiple rows, use the above list API.
 
 Since the APIs are under '/activiti-app/api/enterprise', they are secured using HTTP Basic Authentication by default. For more information around custom REST endpoints, please refer [User Guide](http://docs.alfresco.com/process-services1.6/topics/custom_rest_endpoints.html)
 

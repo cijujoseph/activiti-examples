@@ -70,7 +70,8 @@ public class DatabaseDataModelResource {
 			if (lookupAttribute != null && StringUtils.isNotEmpty(lookupAttribute.getMappedName())
 					&& dataSource != null) {
 
-				//Since there is already a dataModelEntityDao.findOneBy() method, using it instead of writing duplicate code!
+				// Since there is already a dataModelEntityDao.findOneBy()
+				// method, using it instead of writing duplicate code!
 				ObjectNode valueNode = dataModelEntityDao.findOneBy(dataSource, entityDefinition,
 						lookupAttribute.getMappedName(),
 						lookupAttribute.isNumber() ? Long.valueOf(keyValue) : keyValue);
@@ -88,7 +89,8 @@ public class DatabaseDataModelResource {
 
 	@RequestMapping(value = "/enterprise/custom-api/datamodels/{modelId}/entities/{entityName}", method = RequestMethod.GET, produces = "application/json")
 	@Timed
-	public List<Map<String, Object>> getAllEntries(@PathVariable Long modelId, @PathVariable String entityName) {
+	public List<Map<String, Object>> getAllEntries(@PathVariable Long modelId, @PathVariable String entityName,
+			@RequestParam Map<String, String> requestParamMap) {
 
 		try {
 
@@ -97,12 +99,38 @@ public class DatabaseDataModelResource {
 			DataModelEntityRepresentation entityDefinition = dm.findEntity(entityName);
 
 			DataSource dataSource = dataSourceService.getById(dm.getDataSourceId());
+			StringBuilder queryClause = new StringBuilder("");
+			if (requestParamMap.size() > 0) {
+				for (Map.Entry<String, String> entry : requestParamMap.entrySet()) {
+					DataModelAttributeRepresentation lookupAttribute = null;
+					for (DataModelAttributeRepresentation attribute : entityDefinition.getAttributes()) {
+						if (attribute.getName().equals(entry.getKey())) {
+							lookupAttribute = attribute;
+							if (queryClause.toString().equals("")) {
+								queryClause.append(" where ");
+							} else {
+								queryClause.append(" and ");
+							}
+							queryClause.append(lookupAttribute.getMappedName());
+							queryClause.append("=");
+							queryClause.append(lookupAttribute.isNumber() ? Long.valueOf(entry.getValue())
+									: "'" + entry.getValue() + "'");
+							break;
+						}
+					}
+				}
+			}
 			if (dataSource != null) {
 				JdbcTemplate jdbcTemplate = getJdbcTemplate(dataSource);
-				List<Map<String, Object>> resultSet = jdbcTemplate
-						.queryForList("select * from " + entityDefinition.getTableName());
-				List<Map<String, Object>> entityList = mapResponse(resultSet, entityDefinition);
-				return entityList;
+				if (queryClause.toString().equals("")) {
+					List<Map<String, Object>> entityList = jdbcTemplate
+							.queryForList("select * from " + entityDefinition.getTableName());
+					return mapResponse(entityList, entityDefinition);
+				} else {
+					List<Map<String, Object>> entityList = jdbcTemplate
+							.queryForList("select * from " + entityDefinition.getTableName() + queryClause.toString());
+					return mapResponse(entityList, entityDefinition);
+				}
 			}
 			return null;
 
