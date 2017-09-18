@@ -17,9 +17,11 @@ public class ServiceTask1 implements SignallableActivityBehavior {
 		if (signalEvent == null){
 			System.out.println("--re-trying--");
 			this.execute(execution);
+		} else {
+			PvmTransition transition = execution.getActivity().getOutgoingTransitions().get(0);
+			execution.take( transition);
 		}
-		PvmTransition transition = execution.getActivity().getOutgoingTransitions().get(0);
-		execution.take( transition);
+		
 	}
 
 }
