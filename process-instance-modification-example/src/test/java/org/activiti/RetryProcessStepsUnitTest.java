@@ -35,9 +35,7 @@ public class RetryProcessStepsUnitTest {
 				.getProcessEngine().getProcessEngineConfiguration();
 
 		CommandExecutor commandExecutor = processEngineConfigurationImpl.getCommandExecutor();
-		commandExecutor.execute(new RestartInstanceActivitiCommand(processInstance.getId(), "servicetask1"));
-		this.activitiRule.getRuntimeService()
-				.signal(this.activitiRule.getRuntimeService().createExecutionQuery().singleResult().getId());
+		commandExecutor.execute(new RestartInstanceActivitiCommand(processInstance.getId(), "servicetask1", null));
 
 		assertEquals("receivetask1", processInstance.getActivityId());
 		System.out.println("**** End testRetry() ****");
@@ -61,8 +59,66 @@ public class RetryProcessStepsUnitTest {
 		ProcessEngineConfigurationImpl processEngineConfigurationImpl = (ProcessEngineConfigurationImpl) activitiRule
 				.getProcessEngine().getProcessEngineConfiguration();
 
+		Map<String, Object> variables = new HashMap<String, Object>();
+		variables.put("_ACTIVITI_SKIP_EXPRESSION_ENABLED", true);
+		variables.put("skipServiceTask2", true);
+
 		CommandExecutor commandExecutor = processEngineConfigurationImpl.getCommandExecutor();
-		commandExecutor.execute(new RestartInstanceActivitiCommand(processInstance.getId(), "servicetask1"));
+		commandExecutor.execute(new RestartInstanceActivitiCommand(processInstance.getId(), "servicetask1", variables));
+
+		assertEquals("receivetask1", processInstance.getActivityId());
+
+		System.out.println("**** End testRetryWithSkip() ****");
+
+	}
+	
+	/* the following two are a little bit more complicated to achieve the same result as above*/
+
+	@Test
+	@Deployment(resources = { "org/activiti/test/RetrySignallableProcessSteps.bpmn20.xml" })
+	public void testRetrySignallable() {
+		System.out.println("**** Start testRetrySignallable() ****");
+		// start process
+		ProcessInstance processInstance = this.activitiRule.getRuntimeService()
+				.startProcessInstanceByKey("RetrySignallableProcessSteps");
+
+		assertNotNull(processInstance);
+
+		assertEquals("receivetask1", processInstance.getActivityId());
+
+		// Move execution back to service task 1 and retry
+		ProcessEngineConfigurationImpl processEngineConfigurationImpl = (ProcessEngineConfigurationImpl) activitiRule
+				.getProcessEngine().getProcessEngineConfiguration();
+
+		CommandExecutor commandExecutor = processEngineConfigurationImpl.getCommandExecutor();
+		commandExecutor.execute(new ModifyActivityInstanceActivitiCommand(processInstance.getId(), "servicetask1"));
+		this.activitiRule.getRuntimeService()
+				.signal(this.activitiRule.getRuntimeService().createExecutionQuery().singleResult().getId());
+
+		assertEquals("receivetask1", processInstance.getActivityId());
+		System.out.println("**** End testRetrySignallable() ****");
+
+	}
+
+	@Test
+	@Deployment(resources = { "org/activiti/test/RetrySignallableProcessSteps.bpmn20.xml" })
+	public void testRetrySignallableWithSkip() {
+		System.out.println("**** Start testRetrySignallableWithSkip() ****");
+
+		// start process
+		ProcessInstance processInstance = this.activitiRule.getRuntimeService()
+				.startProcessInstanceByKey("RetrySignallableProcessSteps");
+
+		assertNotNull(processInstance);
+
+		assertEquals("receivetask1", processInstance.getActivityId());
+
+		// Move execution back to service task 1 and retry.
+		ProcessEngineConfigurationImpl processEngineConfigurationImpl = (ProcessEngineConfigurationImpl) activitiRule
+				.getProcessEngine().getProcessEngineConfiguration();
+
+		CommandExecutor commandExecutor = processEngineConfigurationImpl.getCommandExecutor();
+		commandExecutor.execute(new ModifyActivityInstanceActivitiCommand(processInstance.getId(), "servicetask1"));
 
 		// Setting expression to skip service task 2 during retry
 		Map<String, Object> variables = new HashMap<String, Object>();
@@ -74,7 +130,7 @@ public class RetryProcessStepsUnitTest {
 
 		assertEquals("receivetask1", processInstance.getActivityId());
 
-		System.out.println("**** End testRetryWithSkip() ****");
+		System.out.println("**** End testRetrySignallableWithSkip() ****");
 
 	}
 
