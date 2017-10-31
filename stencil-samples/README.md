@@ -13,5 +13,6 @@ Unless specified otherwise in the respective folders, the zip archive files avai
 3. Custom Grid/Table: angular-ui-grid-stencil
 4. Signature Pad: signature-pad-stencil
 5. Rich Text Editor: tinymce-rich-text-editor
+6. Tooltip: aps-form-tooltip
 
 
