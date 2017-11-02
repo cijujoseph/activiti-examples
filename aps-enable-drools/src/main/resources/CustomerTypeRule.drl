@@ -1,0 +1,9 @@
+package com.alfresco.rules
+
+rule "CustomerTypeContainsRule"
+
+when
+  	$customer:CustomerRepresentation (custTypCD == 'Retail' || custTypCD == 'Wholesale')
+then   
+    $customer.setCustomerRuleOutput(true);
+end
