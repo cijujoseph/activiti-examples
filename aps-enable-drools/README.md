@@ -4,13 +4,15 @@
 
 1. mvn clean package will generate a jar (a pre-packaged version is available in this project aps-enable-drools-1.0.0-SNAPSHOT.jar).
 2. Place the jar file in webapps/activiti-app/WEB-INF/lib
-3. Deploy ProcessWithDrools.zip via Admin App (activiti-admin)
+3. Deploy ProcessWithDrools.bar via Admin App (activiti-admin)
 4. Start the process instance using the below engine API
-POST - http://<host>:<port>/activiti-app/api/runtime/process-instances?tenantId=tenant_1
-BODY - {"processDefinitionKey":"DroolsTest", "tenantId": "tenant_1", "variables": [ {"name":"custTypCD", "value":"Retail"}]}
+```
+curl -XPOST -u admin@app.activiti.com:admin -H "Content-Type: application/json" -d '{"processDefinitionKey":"DroolsTest", "tenantId": "tenant_1", "variables": [ {"name":"custTypCD", "value":"Retail"}]}' http://localhost:8080/activiti-app/api/runtime/process-instances?tenantId=tenant_1
+```
+5. If you want to integrate this process with a process app developed in Alfresco Process Services, import, publish and run the process app named "Drools Parent Process App.zip" via APS UI -> App Designer -> Apps -> Import.
 
 #### Note:
-1. You will also need to copy all the below jars to lib folder
+1. You will also need to copy all the below jars (available in drools-dependencies folder) to lib folder
     1. antlr-3.3.jar
     2. antlr-runtime-3.3.jar
     3. drools-compiler-5.4.0.Final.jar
