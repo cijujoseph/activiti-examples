@@ -6,6 +6,6 @@ This is just an example, expand/modify to suite your needs. Eg: Following this e
 
 ## How to deploy to APS.
 
-1. mvn clean package will generate a jar (a pre-packaged version is available in this project aps-custom-error-retry-1.0.0-SNAPSHOT.jar).
+1. mvn clean package will generate a jar. If you just want to test this against your APS, a packaged jar (aps-custom-error-retry-1.0.0-SNAPSHOT.jar) is available in this project for you to use.
 2. Place the jar file in webapps/activiti-app/WEB-INF/lib
 
