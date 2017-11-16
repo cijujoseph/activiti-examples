@@ -8,8 +8,8 @@
 
 If you know the task id/process instance id, it is also possible to see the task/process details using the following urls in Alfresco Process Services UI without browsing through the task/process list. This will be useful if you want to generate emails with urls in the email body which will help users to go straight to the task/process details.
 
-1. http://\<host\>:\<port\>/activiti-app/workflow/#/process/<processInstanceId>
-2. http://\<host\>:\<port\>/activiti-app/workflow/#/task/<taskId>
+1. http://\<host\>:\<port\>/activiti-app/workflow/#/process/\<processInstanceId\>
+2. http://\<host\>:\<port\>/activiti-app/workflow/#/task/\<taskId\>
 
 
 
