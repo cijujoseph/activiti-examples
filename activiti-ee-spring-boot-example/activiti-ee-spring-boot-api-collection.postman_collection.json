@@ -1,0 +1,119 @@
+{
+	"variables": [],
+	"info": {
+		"name": "activiti-ee-spring-boot-api-collection",
+		"_postman_id": "54259397-677c-2002-3380-3c778e41061c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateOrder-DomainAPI",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "password",
+						"showPassword": false
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orderNumber\":\"ABC-123\",\n\t\"orderDate\":\"2017-11-11\",\n\t\"item\":\"Internet\"\n}"
+				},
+				"url": "http://localhost:8091/activiti-ee-spring-boot/api/orders/create-order",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ApproveOrder-DomainAPI",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "password",
+						"showPassword": false
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"comments\":\"approved\"\n}"
+				},
+				"url": "http://localhost:8091/activiti-ee-spring-boot/api/orders/ABC-123/approve",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "RejectOrder-DomainAPI",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "password",
+						"showPassword": false
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"comments\":\"rejected\"\n}"
+				},
+				"url": "http://localhost:8091/activiti-ee-spring-boot/api/orders/ABC-123/reject",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ResubmitOrder-DomainAPI",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "admin",
+						"password": "password",
+						"showPassword": false
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orderNumber\":\"ABC-123\",\n\t\"orderDate\":\"2017-11-11\",\n\t\"item\":\"Phone\"\n}"
+				},
+				"url": "http://localhost:8091/activiti-ee-spring-boot/api/orders/ABC-123/resubmit",
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
