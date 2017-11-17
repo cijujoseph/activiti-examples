@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef" xmlns:modeler="http://activiti.com/modeler" modeler:version="1.0en" modeler:exportDateTime="20171117162403420" modeler:modelId="2002" modeler:modelVersion="1" modeler:modelLastUpdated="1510957440376">
+  <process id="CreateOrder" name="CreateOrder" isExecutable="true">
+    <startEvent id="start" name="Start">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[startEvent1]]></modeler:editor-resource-id>
+      </extensionElements>
+    </startEvent>
+    <userTask id="approve-request" name="Approve Request" activiti:assignee="approver">
+      <extensionElements>
+        <modeler:allow-send-email><![CDATA[true]]></modeler:allow-send-email>
+        <modeler:activiti-idm-initiator><![CDATA[true]]></modeler:activiti-idm-initiator>
+        <modeler:editor-resource-id><![CDATA[sid-4DDC2F22-89C4-49AA-8880-82B69C7FB922]]></modeler:editor-resource-id>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-81FE7306-D5DA-485E-914E-39BD4F1264FD" sourceRef="start" targetRef="approve-request">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-81FE7306-D5DA-485E-914E-39BD4F1264FD]]></modeler:editor-resource-id>
+      </extensionElements>
+    </sequenceFlow>
+    <exclusiveGateway id="approve-reject-gw" name="Approved?" default="sid-692B91A6-FBF6-4BA1-B7D3-D90B7D3AF6A8">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-B0758A33-07A0-4D33-A0E3-14C56E6F7E8A]]></modeler:editor-resource-id>
+      </extensionElements>
+    </exclusiveGateway>
+    <sequenceFlow id="sid-7828F43F-994B-4EF8-8DA9-595BC6599FC2" sourceRef="approve-request" targetRef="approve-reject-gw">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-7828F43F-994B-4EF8-8DA9-595BC6599FC2]]></modeler:editor-resource-id>
+      </extensionElements>
+    </sequenceFlow>
+    <serviceTask id="sid-944E5561-E439-41D5-9CE4-ADB1AE78F62A" name="Order Provisioning" activiti:delegateExpression="${orderProvisioning}">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-944E5561-E439-41D5-9CE4-ADB1AE78F62A]]></modeler:editor-resource-id>
+      </extensionElements>
+    </serviceTask>
+    <endEvent id="end" name="End">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-47B656AF-261F-43DA-9C77-627005C640AC]]></modeler:editor-resource-id>
+      </extensionElements>
+    </endEvent>
+    <sequenceFlow id="sid-1E98A437-9767-4A00-A94E-EE1484A55D67" sourceRef="sid-944E5561-E439-41D5-9CE4-ADB1AE78F62A" targetRef="end">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-1E98A437-9767-4A00-A94E-EE1484A55D67]]></modeler:editor-resource-id>
+      </extensionElements>
+    </sequenceFlow>
+    <userTask id="resubmit-request" name="Resubmit Request" activiti:assignee="requester">
+      <extensionElements>
+        <modeler:allow-send-email><![CDATA[true]]></modeler:allow-send-email>
+        <modeler:activiti-idm-initiator><![CDATA[true]]></modeler:activiti-idm-initiator>
+        <modeler:editor-resource-id><![CDATA[sid-4E594720-BE47-4CA9-A908-2B6E018A4A7F]]></modeler:editor-resource-id>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-F0270277-DC6B-4E2E-AA16-1551A20417BB" sourceRef="resubmit-request" targetRef="approve-request">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-F0270277-DC6B-4E2E-AA16-1551A20417BB]]></modeler:editor-resource-id>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="sid-E1F5072A-27E3-499F-83FA-8A2DE569C762" name="Yes" sourceRef="approve-reject-gw" targetRef="sid-944E5561-E439-41D5-9CE4-ADB1AE78F62A">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-E1F5072A-27E3-499F-83FA-8A2DE569C762]]></modeler:editor-resource-id>
+      </extensionElements>
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${approved==true}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="sid-692B91A6-FBF6-4BA1-B7D3-D90B7D3AF6A8" name="No" sourceRef="approve-reject-gw" targetRef="resubmit-request">
+      <extensionElements>
+        <modeler:editor-resource-id><![CDATA[sid-692B91A6-FBF6-4BA1-B7D3-D90B7D3AF6A8]]></modeler:editor-resource-id>
+      </extensionElements>
+    </sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_CreateOrder">
+    <bpmndi:BPMNPlane bpmnElement="CreateOrder" id="BPMNPlane_CreateOrder">
+      <bpmndi:BPMNShape bpmnElement="start" id="BPMNShape_start">
+        <omgdc:Bounds height="29.99999999999997" width="29.999999999999986" x="101.00000000000001" y="250.00000000000003"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="approve-request" id="BPMNShape_approve-request">
+        <omgdc:Bounds height="79.99999999999997" width="99.99999999999997" x="176.00000000000003" y="225.00000000000003"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="approve-reject-gw" id="BPMNShape_approve-reject-gw">
+        <omgdc:Bounds height="39.99999999999997" width="40.0" x="321.00000000000006" y="245.00000000000003"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-944E5561-E439-41D5-9CE4-ADB1AE78F62A" id="BPMNShape_sid-944E5561-E439-41D5-9CE4-ADB1AE78F62A">
+        <omgdc:Bounds height="80.0" width="100.0" x="450.0" y="45.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="end" id="BPMNShape_end">
+        <omgdc:Bounds height="28.0" width="28.0" x="645.0000000000001" y="71.00000000000003"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="resubmit-request" id="BPMNShape_resubmit-request">
+        <omgdc:Bounds height="79.99999999999997" width="99.99999999999994" x="450.00000000000006" y="225.00000000000003"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-692B91A6-FBF6-4BA1-B7D3-D90B7D3AF6A8" id="BPMNEdge_sid-692B91A6-FBF6-4BA1-B7D3-D90B7D3AF6A8">
+        <omgdi:waypoint x="360.56012658227854" y="265.4398734177215"/>
+        <omgdi:waypoint x="450.00000000000006" y="265.1577287066246"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-81FE7306-D5DA-485E-914E-39BD4F1264FD" id="BPMNEdge_sid-81FE7306-D5DA-485E-914E-39BD4F1264FD">
+        <omgdi:waypoint x="131.0" y="265.0"/>
+        <omgdi:waypoint x="176.00000000000003" y="265.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-7828F43F-994B-4EF8-8DA9-595BC6599FC2" id="BPMNEdge_sid-7828F43F-994B-4EF8-8DA9-595BC6599FC2">
+        <omgdi:waypoint x="276.0" y="265.2164502164502"/>
+        <omgdi:waypoint x="321.41304347826093" y="265.4130434782609"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-E1F5072A-27E3-499F-83FA-8A2DE569C762" id="BPMNEdge_sid-E1F5072A-27E3-499F-83FA-8A2DE569C762">
+        <omgdi:waypoint x="341.50000000000006" y="245.50000000000003"/>
+        <omgdi:waypoint x="341.50000000000006" y="85.0"/>
+        <omgdi:waypoint x="450.0" y="85.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-F0270277-DC6B-4E2E-AA16-1551A20417BB" id="BPMNEdge_sid-F0270277-DC6B-4E2E-AA16-1551A20417BB">
+        <omgdi:waypoint x="500.0" y="305.0"/>
+        <omgdi:waypoint x="500.0" y="401.0"/>
+        <omgdi:waypoint x="226.0" y="401.0"/>
+        <omgdi:waypoint x="226.0" y="305.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-1E98A437-9767-4A00-A94E-EE1484A55D67" id="BPMNEdge_sid-1E98A437-9767-4A00-A94E-EE1484A55D67">
+        <omgdi:waypoint x="550.0" y="85.0"/>
+        <omgdi:waypoint x="645.0000000000001" y="85.00000000000003"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
