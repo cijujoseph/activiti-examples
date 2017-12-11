@@ -4,7 +4,7 @@ The zip archive file available in this folder is an “App” export exported fr
 
 ## Pre-requisites
 
-Create a bunch of groups in a parent/child hierarchy as shown below
+Create a bunch of groups in a parent/child hierarchy as shown below. Assign a group manager for each group.
 
 ![groups](groups-screenshot.png)
 
