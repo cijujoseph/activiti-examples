@@ -2,7 +2,7 @@
 
 The zip archive file available in this folder is an “App” export exported from APS 1.7.0. To use this example, you will need to import them via App Designer -> Apps -> Import App. Once the “App” is successfully imported, run it to see this example in action!
 
-Pre-requisites
+## Pre-requisites
 
 Create a bunch of groups in a parent/child hierarchy as shown below
 
