@@ -10,6 +10,12 @@
 3. Place the activiti-dmn-extension-1.0.0-SNAPSHOT.jar in webapp lib folder.
 4. Run the process named My-Process and try submitting the form by filling in the request form. The form submit will not work for age<21 and it is controlled by my DMN Rule.
 
+## Test via API
+```
+POST http://host:port/activiti-app/api/enterprise/dmn/agerule/evaluate
+Body {"personAge":20}
+```
+
 ### Components in the example:
 1. activiti-dmn-extension.zip - Java project containing two REST classes. Providing the following two REST apis to run our DMN Rules. 
     1. http://localhost:8080/activiti-app/app/rest/dmn/{key}/evaluate - API is secured with our activiti-app cookie approach and can be used to do form validation. 
