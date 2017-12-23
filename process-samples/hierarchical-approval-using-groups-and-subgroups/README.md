@@ -8,6 +8,10 @@ Create a bunch of groups in a parent/child hierarchy as shown below. Assign a gr
 
 ![groups](groups-screenshot.png)
 
+Process Model in this example will look like:
+
+![design-time](process-model.png)
+
 When you run the process, you will notice that an approval task is created in a sequential manner to the group managers all the way up to the top level group CEO! A runtime screenshot given below
 
 ![runtime](runtime-view.png)
