@@ -1,1 +1,1 @@
-This project has been moved to the [Alfresco ADF Examples repository](https://github.com/Alfresco/adf-examples). The project can be found at  [insurance-policy-and-claim-center-app](https://github.com/Alfresco/adf-examples/tree/master/ADF%201.5.0/insurance-policy-and-claim-center-app)
+This project has been moved to the [Alfresco ADF Examples repository](https://github.com/Alfresco/adf-examples). The project can be found at  [insurance-policy-and-claim-center-app](https://github.com/Alfresco/adf-examples/tree/master/ADF_1.5.0/insurance-policy-and-claim-center-app)
