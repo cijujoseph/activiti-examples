@@ -1,4 +1,4 @@
-## Demo showing how to invoke rules from a task/start form or from an exteranl system
+## Demo showing how to invoke rules from a task/start form or from an external system
 
 ### Solution Approach
 1. Define a custom rest endpoint which can run DMN rules in Activiti and respond back with results.
