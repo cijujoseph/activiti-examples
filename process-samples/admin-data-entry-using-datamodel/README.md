@@ -8,7 +8,7 @@
 
 ```
 CREATE TABLE CARS ( VIN VARCHAR(50) PRIMARY KEY, BRAND VARCHAR(50), COLOR VARCHAR(50), YEAR NUMBER );
-** Note - If using MySQL the attribute 'NUMBER' is not valid.  The following CREATE statement will work
+  Note - If using MySQL the attribute 'NUMBER' is not valid.  The following CREATE statement will work
     CREATE TABLE cars (vin VARCHAR(50) PRIMARY KEY, brand VARCHAR(50), color VARCHAR(50), year YEAR(4) );
 
 
