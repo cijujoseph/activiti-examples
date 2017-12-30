@@ -5,9 +5,9 @@
 
 * 	Step 2: Create the following table in your database to run this example.
 ```
-CREATE TABLE CARS ( VIN VARCHAR(50) PRIMARY KEY, BRAND VARCHAR(50), COLOR VARCHAR(50), YEAR NUMBER );
-Note - If using MySQL the attribute 'NUMBER' is not valid.  The following CREATE statement will work
-CREATE TABLE cars (vin VARCHAR(50) PRIMARY KEY, brand VARCHAR(50), color VARCHAR(50), year INT);
+for H2 DB - CREATE TABLE CARS ( VIN VARCHAR(50) PRIMARY KEY, BRAND VARCHAR(50), COLOR VARCHAR(50), YEAR NUMBER );
+
+for MySQL - CREATE TABLE cars (vin VARCHAR(50) PRIMARY KEY, brand VARCHAR(50), color VARCHAR(50), year INT);
 ```
 *	Step 3: Import "admin-data-entry-using-datamodel.zip" Alfresco Process Service UI -> App Designer -> Apps ->Import. 
 
