@@ -24,4 +24,4 @@ Since the repository is growing big, listing down some of the important projects
 * [aps-aws-sqs-extension](https://github.com/cijujoseph/activiti-examples/tree/master/aps-aws-sqs-extension)
 
 #### Form Stencil Examples
-* [FORM Stencil Examples](https://github.com/cijujoseph/activiti-examples/tree/master/stencil-samples)
+* [Form Stencil Examples](https://github.com/cijujoseph/activiti-examples/tree/master/stencil-samples)
