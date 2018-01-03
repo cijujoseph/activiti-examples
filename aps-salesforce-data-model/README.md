@@ -38,12 +38,15 @@ sfdc.clientSecret=consumer secret
 
 
 ### Deploy the process app.
-* Import the process app archive via App Designer -> Apps -> Import App
+* Import the process app archive (SFDC Data Model App.zip) via App Designer -> Apps -> Import App
 * Deploy the app by clicking on the "Publish" button.
 
 ### Running the demo
 
-TBW (Also a blog to be written)
+Start the process using a valid Account Number from your Salesforce account. Account details will be fetched from Salesforce via Data Model and shown on the User Task in the process. Upon completion of the User Task, a new Case will be created in Salesforce using Data Model.
+
+For more details watch below video where I captured the development and a demo run of the attached example process app (SFDC Data Model App.zip).
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=WbWAZK_5mxU" target="_blank"><img src="https://img.youtube.com/vi/WbWAZK_5mxU/0.jpg" alt="Click here to watch a demo of this project" width="240" height="180" border="10" /></a>
 
 
 ### Creating/Updating Data Model Entities and Customizing this demo to work with all Salesforce objects
