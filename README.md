@@ -16,8 +16,8 @@ Since the repository is growing big, listing down some of the important projects
 * [Enable Drools in APS](https://github.com/cijujoseph/activiti-examples/tree/master/aps-enable-drools)
 
 #### Integration & Messaging
-* [JMS/ActiveMQ](https://github.com/cijujoseph/activiti-examples/tree/master/aps-activemq-extension)
-* [AWS SQS](https://github.com/cijujoseph/activiti-examples/tree/master/aps-aws-sqs-extension)
+* [JMS/ActiveMQ Integration](https://github.com/cijujoseph/activiti-examples/tree/master/aps-activemq-extension)
+* [AWS SQS Integration](https://github.com/cijujoseph/activiti-examples/tree/master/aps-aws-sqs-extension)
 
 #### BPMN Stencil Examples
 * [aps-acs-integration-utils](https://github.com/cijujoseph/activiti-examples/tree/master/aps-acs-integration-utils)
