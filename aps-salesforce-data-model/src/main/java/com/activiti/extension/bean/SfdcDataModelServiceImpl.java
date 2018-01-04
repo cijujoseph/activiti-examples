@@ -6,7 +6,6 @@ import com.activiti.model.editor.datamodel.DataModelDefinitionRepresentation;
 import com.activiti.model.editor.datamodel.DataModelEntityRepresentation;
 import com.activiti.runtime.activiti.bean.datamodel.AttributeMappingWrapper;
 import com.activiti.variable.VariableEntityWrapper;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -15,7 +14,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,12 +37,12 @@ public class SfdcDataModelServiceImpl implements AlfrescoCustomDataModelService 
 
 		StringBuffer sbr = null;
 		for (DataModelAttributeRepresentation attribute : entityDefinition.getAttributes()) {
-			if (sbr!=null) {
+			if (sbr != null) {
 				sbr.append(",").append(attribute.getName());
 			} else {
 				sbr = new StringBuffer();
 				sbr.append(attribute.getName());
-				
+
 			}
 		}
 		String entityFields = sbr.toString();
@@ -53,9 +51,7 @@ public class SfdcDataModelServiceImpl implements AlfrescoCustomDataModelService 
 
 			JsonNode responseNode = sfdcRestClient.selectSingle(entityFields, sObject, fieldName, (String) fieldValue);
 			return (ObjectNode) objectMapper.readTree(objectMapper.writeValueAsString(responseNode));
-		} catch (JsonProcessingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
@@ -71,12 +67,12 @@ public class SfdcDataModelServiceImpl implements AlfrescoCustomDataModelService 
 
 			StringBuffer sbr = null;
 			for (DataModelAttributeRepresentation attribute : entityDefinition.getAttributes()) {
-				if (sbr!=null) {
+				if (sbr != null) {
 					sbr.append(",").append(attribute.getName());
 				} else {
 					sbr = new StringBuffer();
 					sbr.append(attribute.getName());
-					
+
 				}
 			}
 
@@ -92,9 +88,7 @@ public class SfdcDataModelServiceImpl implements AlfrescoCustomDataModelService 
 				variableEntityWrapper.setEntity(dataNode);
 				variableEntityWrapper.setKey(keyValue);
 				return variableEntityWrapper;
-			} catch (JsonProcessingException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
@@ -113,7 +107,7 @@ public class SfdcDataModelServiceImpl implements AlfrescoCustomDataModelService 
 		for (AttributeMappingWrapper attributeMappingWrapper : attributeDefinitionsAndValues) {
 			logger.info(attributeMappingWrapper.getAttribute().getName());
 			logger.info(attributeMappingWrapper.getValue().toString());
-			
+
 			if (attributeMappingWrapper.getAttribute().getName().equals(idAttribute)
 					&& attributeMappingWrapper.getValue() != null) {
 				idValue = (String) attributeMappingWrapper.getValue();
@@ -130,7 +124,7 @@ public class SfdcDataModelServiceImpl implements AlfrescoCustomDataModelService 
 				JsonNode responseNode = sfdcRestClient.create(parameters, entityDefinition.getName());
 				return responseNode.get("id").textValue();
 			}
-		} catch (JsonProcessingException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
