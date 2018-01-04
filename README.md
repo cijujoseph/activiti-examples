@@ -25,3 +25,6 @@ Since the repository is growing big, listing down some of the important projects
 
 #### Form Stencil Examples
 * [Form Stencil Examples](https://github.com/cijujoseph/activiti-examples/tree/master/stencil-samples)
+
+#### Miscellaneous Process Examples
+* [Process Examples](https://github.com/cijujoseph/activiti-examples/tree/master/process-samples)
