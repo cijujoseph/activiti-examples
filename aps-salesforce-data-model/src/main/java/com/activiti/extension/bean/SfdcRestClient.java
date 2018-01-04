@@ -84,7 +84,7 @@ public class SfdcRestClient {
 
 	}
 
-	@Retryable(value = { CustomUnAutorizedException.class }, maxAttempts = 1)
+	@Retryable(value = { CustomUnAuthorizedException.class }, maxAttempts = 1)
 	public void update(Map<String, Object> requestBody, String Id, String sObject) throws Exception {
 
 		checkAccessToken();
@@ -105,7 +105,7 @@ public class SfdcRestClient {
 			// TODO Auto-generated catch block
 			if (e.getStatusCode() == HttpStatus.UNAUTHORIZED) {
 				setAccessToken();
-				throw new CustomUnAutorizedException(e.getMessage());
+				throw new CustomUnAuthorizedException(e.getMessage());
 			} else {
 				throw e;
 			}
@@ -114,7 +114,7 @@ public class SfdcRestClient {
 		restTemplate.postForObject(uriBuilder.build().toUri(), request, JsonNode.class);
 	}
 
-	@Retryable(value = { CustomUnAutorizedException.class }, maxAttempts = 1)
+	@Retryable(value = { CustomUnAuthorizedException.class }, maxAttempts = 1)
 	public JsonNode create(Map<String, Object> requestBody, String sObject) throws Exception {
 
 		checkAccessToken();
@@ -133,7 +133,7 @@ public class SfdcRestClient {
 			// TODO Auto-generated catch block
 			if (e.getStatusCode() == HttpStatus.UNAUTHORIZED) {
 				setAccessToken();
-				throw new CustomUnAutorizedException(e.getMessage());
+				throw new CustomUnAuthorizedException(e.getMessage());
 			} else {
 				throw e;
 			}
@@ -142,7 +142,7 @@ public class SfdcRestClient {
 		return restTemplate.postForObject(uriBuilder.build().toUri(), request, JsonNode.class);
 	}
 
-	@Retryable(value = { CustomUnAutorizedException.class }, maxAttempts = 1)
+	@Retryable(value = { CustomUnAuthorizedException.class }, maxAttempts = 1)
 	public JsonNode selectSingle(String entityFields, String sObject, String selector, String selectorValue)
 			throws Exception {
 
@@ -166,7 +166,7 @@ public class SfdcRestClient {
 			// TODO Auto-generated catch block
 			if (e.getStatusCode() == HttpStatus.UNAUTHORIZED) {
 				setAccessToken();
-				throw new CustomUnAutorizedException(e.getMessage());
+				throw new CustomUnAuthorizedException(e.getMessage());
 			} else {
 				throw e;
 			}
@@ -185,13 +185,13 @@ public class SfdcRestClient {
 		}
 	}
 
-	class CustomUnAutorizedException extends Exception {
+	class CustomUnAuthorizedException extends Exception {
 		private static final long serialVersionUID = 1L;
 
-		public CustomUnAutorizedException() {
+		public CustomUnAuthorizedException() {
 		}
 
-		public CustomUnAutorizedException(String message) {
+		public CustomUnAuthorizedException(String message) {
 			super(message);
 		}
 	}
