@@ -180,9 +180,9 @@ public class SfdcRestClient {
 	}
 
 	private void checkAccessToken() {
-		if(this.authorizationToken == null){
-		 setAccessToken();
-		 }
+		if (this.authorizationToken == null) {
+			setAccessToken();
+		}
 	}
 
 	class CustomUnAutorizedException extends Exception {
