@@ -4,7 +4,7 @@
 
 * Create a Gmail account (recommend creating an account for testing this instead of using your personal account)
 * Allow less secure apps by going to https://myaccount.google.com/lesssecureapps
-* Open email-listener.properties file available in the root directory and update the username/pw properties with your account details.
+* Open email-listener.properties file available in the root directory and update the username/pw properties with your account details. If the emailid of the user that your are using to login to APS is not the default admin@app.activiti.com, please update the property email.listener.process.user as well with the correct email id.
 * Place the updated file (email-listener.properties) in webapps/activiti-app/WEB-INF/classes
 * Import the process app archive (Email Receiver.zip) via App Designer -> Apps -> Import App
 * Deploy the app by clicking on the "Publish" button.
