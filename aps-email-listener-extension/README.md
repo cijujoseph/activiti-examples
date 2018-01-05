@@ -21,7 +21,7 @@ This APS EMail Solution Extension is intended to provide a functional example of
 * If the email is to complete a task, make sure email is sent from the correct address of the assignee before completing the task
 * And more.....
 
-### Some screenshots from running the example
+#### Some screenshots from running the example
 
 #### Email
 ![Email](images/email.png)
