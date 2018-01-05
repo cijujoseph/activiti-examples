@@ -20,3 +20,14 @@ This APS EMail Solution Extension is intended to provide a functional example of
 * Based on the DMN results start a process & Involve users who are in the CC list as participants. 
 * If the email is to complete a task, make sure email is sent from the correct address of the assignee before completing the task
 * And more.....
+
+## Some screenshots from running the example
+
+##### Email
+![Email](images/email.png)
+
+##### Process Instance
+![Process](images/process.png)
+
+##### Task Instance showing email fields including attachments
+![Task](images/task.png)
