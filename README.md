@@ -16,6 +16,7 @@ Since the repository is growing big, listing down some of the important projects
 * [Enable Drools in APS](https://github.com/cijujoseph/activiti-examples/tree/master/aps-enable-drools)
 
 #### Integration & Messaging
+* [Email/Mailbox Listener](https://github.com/cijujoseph/activiti-examples/tree/master/aps-email-listener-extension)
 * [JMS/ActiveMQ Integration](https://github.com/cijujoseph/activiti-examples/tree/master/aps-activemq-extension)
 * [AWS SQS Integration](https://github.com/cijujoseph/activiti-examples/tree/master/aps-aws-sqs-extension)
 
