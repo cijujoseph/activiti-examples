@@ -1,6 +1,6 @@
 **Activiti examples - mostly Alfresco Process Services powered by Activiti (Activiti Enterprise Edition) code samples**
 
-Most of the projects in this repository are built using Java & Spring. So, if you are new to developing custom extensions/code in Alfresco Process Services, the following blog posts in the Alfresco Process Services Enterprise Series is a good place to start.
+Most of the projects in this repository are built using Java & Spring. So, if you are new to developing custom extensions/code in Alfresco Process Services, the following blog posts in the Alfresco Process Services Enterprise Developer Series is a good place to start.
 * [Setting up an Extension Project](https://community.alfresco.com/community/bpm/blog/2016/11/14/activiti-enterprise-developer-series-setting-up-an-extension-project)
 * [Service Tasks - Java Delegates](https://community.alfresco.com/community/bpm/blog/2016/11/15/activiti-enterprise-developer-series-service-tasks-java-delegates)
 * [Service Tasks - Spring Bean Java Delegates](https://community.alfresco.com/community/bpm/blog/2016/11/15/activiti-enterprise-developer-series-service-tasks-spring-bean-java-delegates)
