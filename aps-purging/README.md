@@ -37,4 +37,4 @@ The following two tables holds process content metadata information and the actu
 
 ### Cleanup of Dev environment
 MODEL_HISTORY table is another table you may consider cleaning up in your development environment. But this should not be big in UAT/Prod etc
-Another idea is to implement all the above logic as a process and let it run every day (using a timer start event). I might try that option as my pet project some time and will let you know if I make any progress!
+Another idea is to implement all the above logic as a process and let it run every day (using a timer start event). 
