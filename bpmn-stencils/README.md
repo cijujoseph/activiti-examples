@@ -12,6 +12,7 @@ Unless specified otherwise in the respective folders, the zip archive files avai
 
 ### List of examples
 
-1. Save attachment(s) in a process to a location in file system: aps-save-to-filesystem-stencil
-
+1. Save attachment(s) in a process to a location in file system: **aps-save-to-filesystem-stencil**
+2. Example showing a Custom ACS Integration built as a stencil: **aps-acs-integration-utils**
+3. Example showing AWS SQS Publish Step built as a stencil: **aps-aws-sqs-extension**
 

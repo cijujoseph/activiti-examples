@@ -30,9 +30,7 @@ Most of the projects in this repository are built using Java & Spring. So, if yo
 * [AWS SQS Integration](https://github.com/cijujoseph/activiti-examples/tree/master/aps-aws-sqs-extension)
 
 #### BPMN Stencil Examples
-* [aps-acs-integration-utils](https://github.com/cijujoseph/activiti-examples/tree/master/aps-acs-integration-utils)
-* [aps-aws-sqs-extension](https://github.com/cijujoseph/activiti-examples/tree/master/aps-aws-sqs-extension)
-* [More in this directory](https://github.com/cijujoseph/activiti-examples/tree/master/bpmn-stencils)
+* [BPMN Stencil Examples](https://github.com/cijujoseph/activiti-examples/tree/master/bpmn-stencils)
 
 #### Form Stencil Examples
 * [Form Stencil Examples](https://github.com/cijujoseph/activiti-examples/tree/master/stencil-samples)
