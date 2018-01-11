@@ -29,8 +29,8 @@ public class ContentUtils {
 		try {			
 			while ((page == null) || (page.hasNext())) {
 				page = relatedContentService
-						.getAllFieldContentForProcessInstance(
-								processInstanceId, 50,
+						.getAllContentForProcessInstance(
+								processInstanceId, 500,
 								pageNumber);
 				relatedContent.addAll(page.getContent());
 				pageNumber++;
