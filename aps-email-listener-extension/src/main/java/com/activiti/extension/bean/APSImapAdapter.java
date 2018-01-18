@@ -46,9 +46,6 @@ public class APSImapAdapter {
 	private static Logger logger = LoggerFactory.getLogger(APSImapAdapter.class);
 
 	@Autowired
-	ActivitiService activitiService;
-
-	@Autowired
 	AlfrescoProcessInstanceService processInstanceService;
 
 	@Autowired
