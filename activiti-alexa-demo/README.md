@@ -1,5 +1,7 @@
 #### The project contains all the components of my blog post - [Building voice enabled business process using Alfresco Activiti and Amazon Alexa](https://community.alfresco.com/people/cjose/blog/2017/02/23/build-a-voice-enabled-business-process-using-alfresco-activiti-and-aws-alexa)
 
+### [Demo Recording](https://alfresco.wistia.com/medias/4bnibbp7ed)
+
 ### Prerequisites to run this demo end-2-end
 
 * Alfresco Activiti Enterprise (Version 1.5 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Activiti](https://www.alfresco.com/products/business-process-management/alfresco-activiti)
