@@ -2,6 +2,7 @@ package com.activiti.extension.bean;
 
 import java.util.List;
 import org.activiti.engine.delegate.DelegateExecution;
+import org.activiti.engine.delegate.DelegateHelper;
 import org.activiti.engine.delegate.JavaDelegate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,15 +16,11 @@ import org.activiti.engine.impl.context.Context;
 @Component("customEmailService")
 public class CustomEmailService implements JavaDelegate {
 	
-	private Expression emailTemplate;
-
-	private Expression toList;
-
-	private Expression subject;
-
-	private Expression contentField;
-	
-	private Expression includeAttachments;
+	protected static final String EXPRESSION_EMAIL_TEMPLATE = "emailTemplate";
+	protected static final String EXPRESSION_TO_LIST = "toList";
+	protected static final String EXPRESSION_SUBJECT = "subject";
+	protected static final String EXPRESSION_CONTENT_FIELD = "contentField";
+	protected static final String EXPRESSION_INCLUDE_ATTACHMENTS = "includeAttachments";
 
 	@Autowired
 	ContentUtils contentUtils;
@@ -34,11 +31,17 @@ public class CustomEmailService implements JavaDelegate {
 	protected static final Logger logger = LoggerFactory.getLogger(CustomEmailService.class);
 
 	public void execute(DelegateExecution execution) throws Exception {
+		
+		Expression emailTemplate = DelegateHelper.getFieldExpression(execution, EXPRESSION_EMAIL_TEMPLATE);
+		Expression toList = DelegateHelper.getFieldExpression(execution, EXPRESSION_TO_LIST);
+		Expression subject = DelegateHelper.getFieldExpression(execution, EXPRESSION_SUBJECT);
+		Expression contentField = DelegateHelper.getFieldExpression(execution, EXPRESSION_CONTENT_FIELD);
+		Expression includeAttachments = DelegateHelper.getFieldExpression(execution, EXPRESSION_INCLUDE_ATTACHMENTS);
 
 		String[] emailToList = { getExpressionValue(execution, toList) };
 		
 		List<RelatedContent> relatedContentList = null;
-		if(Boolean.parseBoolean(getExpressionValue(execution, includeAttachments))){
+		if(includeAttachments!=null && Boolean.parseBoolean(getExpressionValue(execution, includeAttachments))){
 			
 			if (contentField != null) {
 				relatedContentList = contentUtils.getFieldContent(execution.getProcessInstanceId(),

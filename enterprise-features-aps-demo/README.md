@@ -41,6 +41,7 @@ sfdc.clientSecret=consumer secret
 ### Deploy the extension jar file
 
 * Place the jar file (enterprise-features-aps-demo-1.0-SNAPSHOT.jar) in webapps/activiti-app/WEB-INF/lib
+* Place the spring-retry-1.1.5.RELEASE.jar jar file which is a dependency for this extension in webapps/activiti-app/WEB-INF/lib. This library handles the retries upon errors due to Salesforce access token expiry
 * Restart Alfresco Process Services (if not configured to start automatically on classpath updates).
 
 ### Create Email Templates

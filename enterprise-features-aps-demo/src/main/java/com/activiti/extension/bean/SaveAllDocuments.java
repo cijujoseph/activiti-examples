@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.List;
 import org.activiti.engine.delegate.DelegateExecution;
+import org.activiti.engine.delegate.DelegateHelper;
 import org.activiti.engine.delegate.JavaDelegate;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
@@ -21,21 +22,23 @@ import org.activiti.engine.impl.context.Context;
 public class SaveAllDocuments implements JavaDelegate {
 
 	@Autowired
-	private RelatedContentStreamProvider relatedContentStreamProvider;
-
-	private Expression path;
-
-	private Expression contentField;
+	private RelatedContentStreamProvider relatedContentStreamProvider;	
 
 	@Autowired
 	ContentUtils contentUtils;
+	
+	protected static final String EXPRESSION_PATH = "path";
+	
+	protected static final String CONTENT_FIELD = "contentField";
 
 	protected static final Logger logger = LoggerFactory.getLogger(SaveAllDocuments.class);
 
 	public void execute(DelegateExecution execution) throws Exception {
-
-		String newFolderName = "Process-" + execution.getProcessInstanceId();
-
+		
+		Expression path = DelegateHelper.getFieldExpression(execution, EXPRESSION_PATH);
+		
+		Expression contentField = DelegateHelper.getFieldExpression(execution, CONTENT_FIELD);
+		
 		List<RelatedContent> relatedContentList = null;
 		if (contentField != null) {
 			relatedContentList = contentUtils.getFieldContent(execution.getProcessInstanceId(),
@@ -47,12 +50,12 @@ public class SaveAllDocuments implements JavaDelegate {
 
 		try {
 
-			new File(getExpressionValue(execution, path) + newFolderName).mkdir();
+			new File(getExpressionValue(execution, path) ).mkdir();
 
 			for (RelatedContent rc : relatedContentList) {
 				InputStream inputStream = relatedContentStreamProvider.getContentStream(rc);
 
-				File file = new File(getExpressionValue(execution, path) + newFolderName + "/" + rc.getName());
+				File file = new File(getExpressionValue(execution, path)  + "/" + rc.getName());
 				file.setReadable(true);
 				if (!file.exists())
 					file.createNewFile();
