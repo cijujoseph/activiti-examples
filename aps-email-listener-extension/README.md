@@ -1,6 +1,8 @@
 ## Overview
 This APS EMail Solution Extension is intended to provide a functional example of how to enable inbound EMail to initiate new Process instances and complete Activities within an existing process instances.  Examples include use cases where a user may want to initiate a Request, Incident or Case Management type business process by sending an EMail.  Or another example is a use case where a task is assigned to a user, the user receives an EMail notification of the task and that user wants to respond to and complete said task via EMail. 
 
+**Enhanced this project during Alfresco DevCon 2018, see [DevCon Hack-a-thon details](https://community.alfresco.com/docs/DOC-7234-projects-and-teams-hack-a-thon-at-devcon-2018#jive_content_id_Email_Integrations_in_APS) & [Hack-a-thon project slides](https://www.slideshare.net/CijuJoseph/alfresco-devcon-2018-hackathon-email-integrations-in-aps)**
+
 ## Quick and dirty instructions, to be updated in detail soon...
 
 ### Steps to deploy and run using a gmail account
