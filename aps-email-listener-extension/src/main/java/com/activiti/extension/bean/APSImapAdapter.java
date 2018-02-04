@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
-
 import javax.mail.BodyPart;
 import javax.mail.Header;
 import javax.mail.Message;
@@ -28,7 +27,6 @@ import org.springframework.integration.mail.MailReceivingMessageSource;
 import org.springframework.stereotype.Component;
 
 import com.activiti.service.api.UserService;
-import com.activiti.service.runtime.ActivitiService;
 import com.activiti.service.runtime.AlfrescoProcessInstanceService;
 import com.activiti.service.runtime.RelatedContentService;
 import com.activiti.domain.idm.User;
