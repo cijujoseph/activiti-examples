@@ -1,0 +1,47 @@
+--- 
+applications: 
+  - 
+    disk_quota: 2048M
+    instances: 1
+    memory: 2048M
+    name: aps
+    path: ./target/activiti-app.war
+    routes:
+    - route: aps.local.pcfdev.io/activiti-app
+    env:
+      datasource.driver: org.h2.Driver
+      datasource.password: alfresco
+      datasource.url: "jdbc:h2:tcp://192.168.29.144/activiti-app-pcf"
+      datasource.username: alfresco
+      hibernate.dialect: "org.hibernate.dialect.H2Dialect"
+      cluster.enable: false
+      cluster.config.name: development
+      cluster.config.username: dev
+      cluster.config.password: dev
+      apsadmin.host: apsadmin.local.pcfdev.io
+      cors.enabled: true
+      security.csrf.disabled: true
+      elastic-search.rest-client.address: 192.168.29.144
+      elastic-search.rest-client.port: 9200
+      event.generation.enabled: true
+      event.processing.enabled: true
+      event.processing.blocksize: 100
+      event.processing.cronExpression: "0/5 * * * * ?"
+      event.processing.expired.cronExpression: "0 0/30 * * * ?"
+      event.processing.processed.action.cronExpression: "0 25/45 * * * ?"
+      email.enabled: true
+      ## some the following email props can be hooked up to a PCF Email Service directly in properties file and avoid these environment variables
+      email.host: smtp.gmail.com
+      email.port: 587
+      email.useCredentials: true
+      email.username: test@gmail.com
+      email.password: test
+      email.base.url: http://aps.local.pcfdev.io
+      email.from.default: no-reply@localhost.com
+      email.from.default.name: "Alfresco Process Services"
+      email.feedback.default: aps@localhost.com
+      email.tls: true
+      app.kickstart.default.enabled: true
+      JBP_CONFIG_TOMCAT: '[tomcat: {context_path: "/activiti-app"}]'
+    services:
+    - contentstore
