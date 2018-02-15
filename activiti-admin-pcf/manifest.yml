@@ -1,0 +1,17 @@
+--- 
+applications: 
+  - 
+    disk_quota: 1024M
+    instances: 1
+    memory: 1024M
+    name: apsadmin
+    path: ./target/activiti-admin.war
+    routes:
+    - route: apsadmin.local.pcfdev.io/activiti-admin
+    env:
+      datasource.driver: org.h2.Driver
+      datasource.password: alfresco
+      datasource.url: "jdbc:h2:tcp://192.168.29.144/activiti-admin-pcf"
+      datasource.username: alfresco
+      hibernate.dialect: "org.hibernate.dialect.H2Dialect"
+      JBP_CONFIG_TOMCAT: '[tomcat: {context_path: "/activiti-admin"}]'
