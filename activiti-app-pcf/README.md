@@ -59,8 +59,8 @@ Alfresco Process Services enables you to upload content, such as attaching a fil
 * If it is S3, it can be configured using any S3 services available in PCF Marketplace or by creating a User-Provided Service Instance or via Environment Variables.
 
 * If not using S3, leveraging the NFS Volume Service in PCF, the storage path can be mapped. In this example, I am using the [local-volume](https://github.com/cloudfoundry/local-volume-release) service. You can create local-volume service using the command `cf create-service local-volume free-local-disk contentstore` and use the property `${vcap.services.contentstore.volume_mounts[0].container_dir}` as a value to the property `contentstorage.fs.rootFolder`
-###### LDAP Configuration (activiti-app.properties)
-###### LDAP Sync (activiti-app.properties)
+###### LDAP Configuration (activiti-ldap.properties)
+###### LDAP Sync (activiti-ldap.properties)
 ###### External Content Platform integrations(activiti-app.properties)
 Content integration to cloud platforms such as Alfresco Cloud, Box, Google Drive can be configured either using a User-Provided Service Instance (`cf cups`) approach or using environment variables. For the sake of simplicity I excluded those property mappings from the activiti-app.properties in this example. However you can add them in by referring this [page](https://docs.alfresco.com/process-services1.8/topics/integration_with_external_systems.html). For a complete list of available properties, you can also look at the default activiti-app.properties file which is available in the activiti-app.war distribution from Alfresco.
 ###### Logging Configuration (log4j.properties)
