@@ -114,3 +114,10 @@ If you are looking at automating the whole deployment pipeline, I expect it to w
 > The host name and path to be adjusted as per your configurations
 
 
+
+> If you trying to run both [activiti-app](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-app-pcf) & [activiti-admin](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-admin-pcf) in a PCFDev environment on local machine, memory setting could be a challenge. A configuration that worked for me is:
+>
+* activiti-app: 1300M
+* activiti-admin: 700M
+
+
