@@ -60,25 +60,57 @@ Alfresco Process Services enables you to upload content, such as attaching a fil
 
 * If not using S3 then leverage the NFS Volume Service in PCF and map the storage path accordingly. In this example, I am using the [local-volume](https://github.com/cloudfoundry/local-volume-release) service. You can create local-volume service using the command `cf create-service local-volume free-local-disk contentstore` and use the property `${vcap.services.contentstore.volume_mounts[0].container_dir}` as a value to the property `contentstorage.fs.rootFolder`
 ###### LDAP Configuration (activiti-ldap.properties)
+Similar to activiti-app.properties, LDAP/AD configuration in APS is configured via a property file named `activiti-ldap.properties`. This file will need to be configured using PCF service/environment variables and must be kept at `META-INF/activiti-app/activiti-ldap.properties` of this project. Please refer [External Identity Management (LDAP/Active Directory)](https://docs.alfresco.com/process-services1.8/topics/externalIdentityManagement.html) for more details on this.
+
 ###### LDAP Sync (activiti-ldap.properties)
+[LDAP Synchronization](https://docs.alfresco.com/process-services1.8/topics/synchronization.html) configuration in Alfresco Process Services is also controlled via `activiti-ldap.properties`. 
+> Note that the LDAP sync only needs to be activated and configured on one node in the cluster (eventhough it works when activated on multiple nodes, it is unnecessary). If you are planning to run more than one APS node, it makes sense to generate two war files (one with and one without ldap sync). Using this approach:
+> 
+>1. You can deploy & run one instance of APS with LDAP Sync turned on. This node can be enabled to do additional async processing such as event processing to Elasticsearch etc
+>
+>2. If you need additional APS nodes run/scale 1...N instances of APS without LDAP Sync.
+
+Based on my limited knowledge on PCF, a cleaner option will be to deploy APS without LDAP Sync and use the [PCF Scheduler](http://docs.pivotal.io/pcf-scheduler/1-1/using-calls.html) to trigger the LDAP Sync. This approach can help avoid maintaing two apps (one with and one without LDAP Sync). Similar approach can be adopted for the above mentioned Elasticsearch Event Processing as well if you want to restrict it to just one node and save some resources for process execution!
+
 ###### External Content Platform integrations(activiti-app.properties)
 Content integration to document management platforms such as Alfresco Content Services, Box, or Google Drive can be configured either using a User-Provided Service Instance (`cf cups`) or using environment variables. For the sake of simplicity I excluded those property mappings from the activiti-app.properties in this example. However you can add them in by referring to this [page](https://docs.alfresco.com/process-services1.8/topics/integration_with_external_systems.html). For a complete list of available properties, you can also look at the default activiti-app.properties file which is available in the activiti-app.war distribution from Alfresco.
 ###### Logging Configuration (log4j.properties)
 The log4j.properties file in this example project is configured with standard STDOUT as explained in the [PCF Application Logging docs](https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html). This will enable the Process Services logging to appear in PCF logs (both via the console as well as using commands such as `cf logs APP_NAME`). While developing solutions & extensions on APS, please ensure that all the logging is implemented via log4j.
-###### Tomcat Configuration (environment variable)
-https://github.com/cloudfoundry/java-buildpack
+###### Tomcat Container Configuration (environment variable)
+Alfresco Process Services can be run inside the [Tomcat Container of Cloud Foundry Java Buildpack](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/container-tomcat.md). Since the default context root expected by APS is `/activiti-app`, the environment variable `JBP_CONFIG_TOMCAT` must be set on `cf push`. Check `manifest.yml` for an example environment variable & route path configuration. If you wish to change the default context_path to something else OR leave it as default '/', consider changing the following files.
 
+	```
+	activiti-app/scripts/app-cfg.js
+	activiti-app/workspace/index.html
+	activiti-app/workspace/app.config.json
+	activiti-app/workspace/vendor.bundle.js
+	```
 
 ### Deployment
+Let's now look at the deployment of the war file created from this project to different environments using Cloud Foundry Command Line Interface (cf CLI) & Manifests (Manifests provide consistency and reproducibility, and can help you automate deploying apps).Checkout [Deploying with Application Manifests](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html) for more details.
+
+Check `manifest.yml` in this project for an example configuration. It is very powerful and if you look at this example, I am doing a lot of configurations such as instance/node count, memory, disk allocation, route config, service binding, environment variables etc
+Using this approach, you can create unique manifest files for each of your environment and store them in a version control system such as GitHub
+
+Commands to build the war and deploy the app to PCF
 
 ```
-cf create-service local-volume free-local-disk contentstore
 cd <this project root>
+mvn clean compile war:war
+cf create-service local-volume free-local-disk contentstore
 cf push -f ./manifest.yml
 ```
-##### Some URLs to validate a successful deployment
+
+If you are looking at automating the whole deployment pipeline, I expect it to work the following way:
+
+1. Create the war file using maven commands, version and store it in your artifact repository.
+2. The deployment script will pull the artifact from your artifact repository & pull the manifest file for the environment from your version control system and deploys the artifact using above `cf push` command.
+
+##### Some URLs to validate a successful deployment. 
 * **APS OOTB UI**: http://aps.local.pcfdev.io/activiti-app/workspace
 * **ADF based Process Workspace**: http://aps.local.pcfdev.io/activiti-app/workspace
 * **API Explorer**: http://aps.local.pcfdev.io/activiti-app/api-explorer.html
+
+> The host name and path to be adjusted as per your configurations
 
 
