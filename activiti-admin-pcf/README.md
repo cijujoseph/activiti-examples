@@ -6,4 +6,4 @@ The packaging & deployment approach here is very similar to the deployment of AP
 > If you trying to run both [activiti-app](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-app-pcf) & [activiti-admin](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-admin-pcf) in a PCFDev environment on local machine, memory setting could be a challenge. A configuration that worked for me is:
 >
 * activiti-app: 1300M
-* activiti-admin: 700M
+* activiti-admin: 750M

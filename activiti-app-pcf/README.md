@@ -118,6 +118,14 @@ If you are looking at automating the whole deployment pipeline, I expect it to w
 > If you trying to run both [activiti-app](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-app-pcf) & [activiti-admin](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-admin-pcf) in a PCFDev environment on local machine, memory setting could be a challenge. A configuration that worked for me is:
 >
 * activiti-app: 1300M
-* activiti-admin: 700M
+* activiti-admin: 750M
+
+### Screenshots
+##### PCFDev console showing APS & [APS Admin](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-admin-pcf) running
+![PCFDev Console](screenshots/pcfdev-console.png)
+##### APS Running on PCFDev
+![PCFDev Console](screenshots/aps-ootb-ui.png)
+##### ADF based Process Services Workspace
+![PCFDev Console](screenshots/adf-process-work-space.png)
 
 
