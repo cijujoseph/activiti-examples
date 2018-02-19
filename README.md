@@ -13,6 +13,12 @@ Most of the projects in this repository are built using Java & Spring. So, if yo
 
 * [Alexa Integration with Alfresco Process Services](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-alexa-demo)
 
+#### Packaging & Deployment
+* [Sample Dependency/Extension Project Structure](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-project-structure)
+* [APS war file repackaging](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-app)
+* [APS PCF Deployment](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-admin-pcf)
+* [APS Admin PCF Deployment](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-app-pcf)
+
 #### Data Model Projects
 * [Data Model implementation over Elasticsearch](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-custom-data-model-sample)
 * [Data Model implementation over Amazon DynamoDB](https://github.com/cijujoseph/activiti-examples/tree/master/aps-dynamodb-data-model)
