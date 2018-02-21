@@ -1,1 +1,1 @@
-Hack to override OOTB Rest Call Bean with a custom one. Taking this approach as the name of the bean matters in this case!
+Folder hosting quick & hacky solutions..use with care!
