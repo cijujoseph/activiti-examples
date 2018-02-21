@@ -1,3 +1,5 @@
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/ciju-activiti-examples/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **Activiti examples - mostly Alfresco Process Services powered by Activiti (Activiti Enterprise Edition) code samples**
 
 Most of the projects in this repository are built using Java & Spring. So, if you are new to developing custom extensions/code in Alfresco Process Services, the following blog posts in the Alfresco Process Services Enterprise Developer Series is a good place to start.
