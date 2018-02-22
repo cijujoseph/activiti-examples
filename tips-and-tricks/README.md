@@ -1,1 +1,1 @@
-Folder hosting quick & hacky solutions..use with care!
+Folder hosting quick & hacky solutions..use with caution!
