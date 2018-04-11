@@ -45,3 +45,7 @@ Most of the projects in this repository are built using Java & Spring. So, if yo
 
 #### Miscellaneous Process Examples
 * [Process Examples](https://github.com/cijujoseph/activiti-examples/tree/master/process-samples)
+
+#### Task Examples
+* [Round Robin Task Assignment to Members of Candidate Groups](https://github.com/cijujoseph/activiti-examples/tree/master/aps-dynamic-task-assignment-extension)
+* [Sub-Task/Checklist Utils](https://github.com/cijujoseph/activiti-examples/tree/master/activiti-sub-task-utils)
