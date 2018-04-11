@@ -1,0 +1,1 @@
+Round robin task assignment listener example which looks at members of candidate groups of a task, then assign the task to a member of those groups dynamically in a round robin fashion. This will help avoid the additional claim step. Assignee will still be  able to unclaim/re-queue if they don't like to work on that task!
