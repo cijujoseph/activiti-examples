@@ -39,9 +39,11 @@ Most of the projects in this repository are built using Java & Spring. So, if yo
 
 #### BPMN Stencil Examples
 * [BPMN Stencil Examples](https://github.com/cijujoseph/activiti-examples/tree/master/bpmn-stencils)
+* [SOAP Call BPMN Stencil](https://github.com/cijujoseph/activiti-examples/tree/master/aps-soap-ws-extensions)
 
 #### Form Stencil Examples
 * [Form Stencil Examples](https://github.com/cijujoseph/activiti-examples/tree/master/stencil-samples)
+* [SOAP Proxy Form Stencil](https://github.com/cijujoseph/activiti-examples/tree/master/aps-soap-ws-extensions)
 
 #### Miscellaneous Process Examples
 * [Process Examples](https://github.com/cijujoseph/activiti-examples/tree/master/process-samples)
