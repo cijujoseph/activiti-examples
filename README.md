@@ -45,6 +45,8 @@ Most of the projects in this repository are built using Java & Spring. So, if yo
 
 #### Miscellaneous Process Examples
 * [Process Examples](https://github.com/cijujoseph/activiti-examples/tree/master/process-samples)
+* [Inject Ad-Hoc SubProcess using REST] (https://github.com/cijujoseph/activiti-examples/tree/master/aps-adhoc-subprocess-injection-into-multi-instance-call-activity)
+* [Process Instance Modification Example] (https://github.com/cijujoseph/activiti-examples/tree/master/process-instance-modification-example)
 
 #### Task Examples
 * [Round Robin Task Assignment to Members of Candidate Groups](https://github.com/cijujoseph/activiti-examples/tree/master/aps-dynamic-task-assignment-extension)
