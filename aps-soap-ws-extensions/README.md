@@ -23,5 +23,8 @@ Created a Java Delegate (SOAPConnector.java) which reads the config from the BPM
 In both form & bpmn stencils, the soap request mapping is done using xml templates as shown below. The message template supports variable substitution using form and process data. On the server side, the variable substitution is implemented using freemarker libs which is already part of APS.
 ![](screenshots/soap-req-template.png)
 
+### Running the app
+Now inspect the example process you just imported in step 3 above to find the SOAP config on form as well as in process & just run it!!
+
 	
 
