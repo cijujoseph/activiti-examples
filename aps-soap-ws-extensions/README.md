@@ -1,7 +1,7 @@
 Utility  classes for building SOAP WS stencils (Form as well as BPMN).
 
 
-####Quick and dirty README below, until I write a proper README refer to the source code for more detail...
+#### Quick and dirty README below, until I write a proper README refer to the source code for more detail...
 
 1. Place aps-soap-ws-extensions.jar in the APS classpath
 2. Create two endpoints in APS as explained below.
