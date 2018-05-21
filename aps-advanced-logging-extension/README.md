@@ -1,5 +1,5 @@
 ## Advanced logging example
-This project is created to help APS customers implement additional logging that will help with a variety of audit requirements. The approaches taken this project are basically leveraging the standard features of "Spring" and not any APS specific implementation! In this example project I am doing two things.
+This project is created to help APS customers implement additional logging that will help with a variety of audit requirements. The approaches taken in this project are basically leveraging the standard features of "Spring" and not any APS specific implementation! In this example project I am doing two things.
 
 * Add additional information to the log entries using Mapped Diagnostic Context (MDC). Refer http://www.baeldung.com/mdc-in-log4j-2-logback for more details. The classes I created that are related to this are:
 	* MDCFilter.java class is a filter that puts a key/value with key "user" into the current thread's context map
@@ -11,6 +11,7 @@ This project is created to help APS customers implement additional logging that 
  
 #### Please note that this project is only an example. You will need to review and adjust the project to meet your logging needs. Also, make sure you are not logging any sensitive information into the logs!
 
+## Steps to deploy and run this example
 * Import the app MDCTest.zip into APS and publish the app.
 * Deploy aps-advanced-logging-extension-1.0-SNAPSHOT.jar to APS classpath
 * Update the log4j config which you can find in activiti-app/WEB-INF/classes directory with the following two configurations
