@@ -31,6 +31,7 @@ public class CustomPermissionService extends PermissionService {
 	GroupService groupService;
 
 	public static final String WATCHLIST_GROUP_NAME = "watchlist-group";
+	public static final String PROCESS_WATCHLIST_GROUP_NAME = "process-watchlist-group";
 
 	@Override
 	public boolean hasReadPermissionOnProcessInstance(User user, String processInstanceId) {
@@ -100,8 +101,9 @@ public class CustomPermissionService extends PermissionService {
 	}
 
 	private boolean isUserInWatchListGroup(User user) {
-		Group group = groupService.getGroupByNameAndTenantId(WATCHLIST_GROUP_NAME, 1L).get(0);
-		return groupService.isUserInGroup(group, user);
+		Group taskWatcherGroup = groupService.getGroupByNameAndTenantId(WATCHLIST_GROUP_NAME, 1L).get(0);
+		Group processWatcherGroup = groupService.getGroupByNameAndTenantId(PROCESS_WATCHLIST_GROUP_NAME, 1L).get(0);
+		return (groupService.isUserInGroup(taskWatcherGroup, user) || groupService.isUserInGroup(processWatcherGroup, user));
 	}
 
 }
