@@ -1,6 +1,6 @@
 ## Bulk User Upload Process
 
-A utility process to create local users in bulk in APS from a CSV file format that is supported also supported by ACS. For more details around the CSV file format refer https://docs.alfresco.com/5.2/tasks/admintools-upload-users.html The start form of the process will prompt user to upload the CSV file. Once submitted, process will read the attached csv file and **create/updates** the users in APS local database. For a sample file please refer users.csv file in this project.
+A utility process to create local users in bulk in APS from a CSV file format that is also supported by ACS. For more details around the CSV file format refer https://docs.alfresco.com/5.2/tasks/admintools-upload-users.html The start form of the process will prompt user to upload the CSV file. Once submitted, process will read the attached csv file and **create/updates** the users in APS local database. For a sample file please refer users.csv file in this project.
 
 ### Steps to deploy & run this project
 
