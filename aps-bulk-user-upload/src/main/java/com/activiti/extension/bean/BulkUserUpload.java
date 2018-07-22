@@ -66,27 +66,28 @@ public class BulkUserUpload implements JavaDelegate {
 		for (Object object : list) {
 			UserModel user = (UserModel) object;
 			User apsUser = new User();
-			String encodedPassword = user.getPassword() != null ? passwordEncoder.encode(user.getPassword()) : null;
-			if(userService.findUserByExternalId(user.getUserId()) == null) {
-				apsUser.setPassword(encodedPassword);
-				apsUser.setFirstName(user.getFirstName());
-				apsUser.setLastName(user.getLastName());
-				apsUser.setEmail(user.getEmail());
-				apsUser.setCompany(user.getCompany());
-				apsUser.setExternalId(user.getUserId());
-				apsUser.setStatus(UserStatus.ACTIVE);
-				apsUser.setAccountType(AccountType.ENTERPRISE);
-				apsUser.setLastUpdate(new Date());
-				apsUser.setCreated(new Date());
-				apsUser.setTenantId(1L);
-				userService.save(apsUser);
-			} else {
-				Long userId = userService.findUserByExternalId(user.getUserId()).getId();
-				userService.updateUser(userId, 
-						user.getEmail(), user.getFirstName(), user.getLastName(), user.getCompany());
-				userService.changePassword(userId, user.getPassword());
+			if(user.getUserId()!=null){
+				String encodedPassword = user.getPassword() != null ? passwordEncoder.encode(user.getPassword()) : null;
+				if(userService.findUserByExternalId(user.getUserId()) == null) {
+					apsUser.setPassword(encodedPassword);
+					apsUser.setFirstName(user.getFirstName());
+					apsUser.setLastName(user.getLastName());
+					apsUser.setEmail(user.getEmail());
+					apsUser.setCompany(user.getCompany());
+					apsUser.setExternalId(user.getUserId());
+					apsUser.setStatus(UserStatus.ACTIVE);
+					apsUser.setAccountType(AccountType.ENTERPRISE);
+					apsUser.setLastUpdate(new Date());
+					apsUser.setCreated(new Date());
+					apsUser.setTenantId(1L);
+					userService.save(apsUser);
+				} else {
+					Long userId = userService.findUserByExternalId(user.getUserId()).getId();
+					userService.updateUser(userId, 
+							user.getEmail(), user.getFirstName(), user.getLastName(), user.getCompany());
+					userService.changePassword(userId, user.getPassword());
+				}
 			}
-			
 		}
 		reader.close();
 	}
