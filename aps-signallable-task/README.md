@@ -22,4 +22,5 @@ PUT http://localhost:8080/activiti-app/api/runtime/executions/${executionId}?ten
 {
   "action":"signal",
   "variables" : []
-}```
+}
+```
